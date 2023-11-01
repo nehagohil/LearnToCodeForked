@@ -1,4 +1,5 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using System.Diagnostics.Metrics;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProblemSolution
 {
@@ -106,15 +107,36 @@ namespace ProblemSolution
             //Console.WriteLine("Average of the four input numbers are : " + averageResult);
 
             //11. Write a C# Sharp program that takes three numbers (x,y,z) as input and outputs (x+y).z and x.y + y.z.
-            int x, y, z;
-            Console.WriteLine("enter X : ");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter Y : ");
-            y = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter Z : ");
-            z = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine((x+y)*z);
-            Console.WriteLine(x*y + y*z);
+            //int x, y, z;
+            //Console.WriteLine("enter X : ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter Y : ");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter Z : ");
+            //z = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine((x+y)*z);
+            //Console.WriteLine(x*y + y*z);
+
+            //12. Write a C# program that takes a number as input and displays it four times in a row (separated by blank spaces), and then four times in the next row, with no separation. You should do it twice: Use the console. Write and use {0}.
+            //Test Data:
+            //Enter a digit: 25
+            //Expected Output:
+            //25 25 25 25
+            //25252525
+            //25 25 25 25
+            //25252525
+
+            int num;
+            Console.WriteLine("Enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            string numwithspace = num + " " + num + " " + num + " " + num;
+            string numwithnospace = num + "" + num + "" + num + "" + num;
+            Console.WriteLine("{0}", numwithspace);
+            Console.WriteLine("{0}", numwithnospace);
+            Console.WriteLine("{0}", numwithspace);
+            Console.WriteLine("{0}", numwithnospace);
+
+
         }
     }
 }
