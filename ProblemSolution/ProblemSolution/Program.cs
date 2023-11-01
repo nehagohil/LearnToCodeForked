@@ -192,13 +192,24 @@ namespace ProblemSolution
             //e3resourcw
             //nythoP
 
-            string str = "Neha";
-            char[] chararray = str.ToCharArray();
-            char temp = chararray[0];
-            chararray[0] = chararray[str.Length - 1];
-            chararray[str.Length - 1] = temp;    
-            string newstr = new string(chararray);
+            //string str = "Neha";
+            //char[] chararray = str.ToCharArray();
+            //char temp = chararray[0];
+            //chararray[0] = chararray[str.Length - 1];
+            //chararray[str.Length - 1] = temp;    
+            //string newstr = new string(chararray);
+            //Console.WriteLine(newstr);
+
+            //17.	Write a C# program to create a string from a given string (length 1 or more) with the first character added at the front and back.
+            //Sample Output:
+            //Input a string : The quick brown fox jumps over the lazy dog.
+            //TThe quick brown fox jumps over the lazy dog.T
+
+            string str = "The quick brown fox jumps over the lazy dog.";
+            char add = str[0];
+            string newstr = add + str + add;
             Console.WriteLine(newstr);
+
         }
     }
 }
