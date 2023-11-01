@@ -151,16 +151,38 @@ namespace ProblemSolution
 
             //14. Write a C# program to convert Celsius degrees to Kelvin and Fahrenheit. Kelvin = Celsius + 273.15
 
-            int celcius;
-            double add = 273.15;
-            double kelvin, Fahrenheit;
-            Console.WriteLine("Please enter celcius degrees to convert : ");
-            celcius = Convert.ToInt32(Console.ReadLine());
-            kelvin = celcius + add;
-            Console.WriteLine("Kelvin conversion is  :" + kelvin);
-            Fahrenheit = (celcius * 9 / 5) + 32;
-            Console.WriteLine("Fahrenheit conversion is  :" + Fahrenheit);
+            //int celcius;
+            //double add = 273.15;
+            //double kelvin, Fahrenheit;
+            //Console.WriteLine("Please enter celcius degrees to convert : ");
+            //celcius = Convert.ToInt32(Console.ReadLine());
+            //kelvin = celcius + add;
+            //Console.WriteLine("Kelvin conversion is  :" + kelvin);
+            //Fahrenheit = (celcius * 9 / 5) + 32;
+            //Console.WriteLine("Fahrenheit conversion is  :" + Fahrenheit);
 
+            //15.	Write a C# program that removes a specified character from a non-empty string using the index of a character.
+            //Test Data:
+            //w3resource
+            //Sample Output:
+            //wresource
+            //w3resourc
+            //3resource
+
+                string str = "w3resource";
+                char remove = '3';
+                int pos=0;
+                Console.WriteLine("String is : "+str);
+                for(int i=0; i< str.Length;i++)
+                {
+                    if (str[i] == remove)
+                    {
+                        pos = i;
+                    }
+
+                }
+                string newstr = str.Remove(pos,1);
+                Console.Write("After removing the character " +remove + " New string is : "+newstr);
         }
     }
 }
