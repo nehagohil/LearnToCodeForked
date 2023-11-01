@@ -205,10 +205,35 @@ namespace ProblemSolution
             //Input a string : The quick brown fox jumps over the lazy dog.
             //TThe quick brown fox jumps over the lazy dog.T
 
-            string str = "The quick brown fox jumps over the lazy dog.";
-            char add = str[0];
-            string newstr = add + str + add;
-            Console.WriteLine(newstr);
+            //string str = "The quick brown fox jumps over the lazy dog.";
+            //char add = str[0];
+            //string newstr = add + str + add;
+            //Console.WriteLine(newstr);
+
+            //18.	Write a C# program to check a pair of integers and return true if one is negative and one is positive.
+            //Sample Output:
+            //Input first integer:
+            //            -5
+            //Input second integer:
+            //            25
+            //Check if one is negative and one is positive:
+            //True
+
+            int num1, num2;
+            Console.WriteLine("enter number 1 : ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter number 2 : ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            CheckForNegative checkForNegative = new CheckForNegative();
+            bool valid = checkForNegative.checkPairOfInteger(num1, num2);
+            if (valid)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
 
         }
     }

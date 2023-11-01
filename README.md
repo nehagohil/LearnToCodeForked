@@ -19,3 +19,4 @@
 | 15 | Write a C# program that removes a specified character from a non-empty string using the index of a character | Completed |
 | 16 | Write a C# program to create a new string from a given string where the first and last characters change their positions | Completed |
 | 17 | Write a C# program to create a string from a given string (length 1 or more) with the first character added at the front and back | Completed |
+| 18 | Write a C# program to check a pair of integers and return true if one is negative and one is positive | Completed |
