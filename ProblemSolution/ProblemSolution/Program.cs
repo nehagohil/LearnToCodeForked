@@ -126,15 +126,28 @@ namespace ProblemSolution
             //25 25 25 25
             //25252525
 
+            //int num;
+            //Console.WriteLine("Enter number");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //string numwithspace = num + " " + num + " " + num + " " + num;
+            //string numwithnospace = num + "" + num + "" + num + "" + num;
+            //Console.WriteLine("{0}", numwithspace);
+            //Console.WriteLine("{0}", numwithnospace);
+            //Console.WriteLine("{0}", numwithspace);
+            //Console.WriteLine("{0}", numwithnospace);
+
+            // 13. Write a C# program that takes a number as input and displays a rectangle of 3 columns wide and 5 rows tall using that digit.
             int num;
             Console.WriteLine("Enter number");
             num = Convert.ToInt32(Console.ReadLine());
-            string numwithspace = num + " " + num + " " + num + " " + num;
-            string numwithnospace = num + "" + num + "" + num + "" + num;
-            Console.WriteLine("{0}", numwithspace);
-            Console.WriteLine("{0}", numwithnospace);
-            Console.WriteLine("{0}", numwithspace);
-            Console.WriteLine("{0}", numwithnospace);
+            for(int i=0; i<5;i++)
+            {
+                for(int j=0; j<3; j++)
+                {
+                    Console.Write(num);
+                }
+                Console.WriteLine();
+            }
 
 
         }
