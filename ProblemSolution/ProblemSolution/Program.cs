@@ -74,17 +74,23 @@ namespace ProblemSolution
 
             //8. Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user
 
-            int num1, num2;
-            Console.WriteLine("enter number 1 : ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            BasicCalculations basicCalculations = new BasicCalculations();
-            basicCalculations.Addition(num1,num2);
-            basicCalculations.Subtraction(num1, num2);
-            basicCalculations.Multiplication(num1,num2);
-            basicCalculations.Division(num1,num2);
-            
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //BasicCalculations basicCalculations = new BasicCalculations();
+            //basicCalculations.Addition(num1,num2);
+            //basicCalculations.Subtraction(num1, num2);
+            //basicCalculations.Multiplication(num1,num2);
+            //basicCalculations.Division(num1,num2);
+
+            //9. Write a C# Sharp program that prints the multiplication table of a number as input
+            int num;
+            Console.WriteLine("Enter the number for Printing the multiplication table : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            MultiplicationTable multiplicationTable = new MultiplicationTable();
+            multiplicationTable.PrintMultiplicationTable(num);
         }
     }
 }
