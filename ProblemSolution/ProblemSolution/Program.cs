@@ -237,15 +237,25 @@ namespace ProblemSolution
 
 
             //19.	Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //ComputeSum computeSum = new ComputeSum();
+            //int result = computeSum.SumOrTripleofsum(num1, num2);
+            //Console.WriteLine(result);
+
+            //20.	Write a C# program to get the absolute value of the difference between two given numbers.
+            //Return double the absolute value of the difference if the first number is greater than the second number
             int num1, num2;
             Console.WriteLine("enter number 1 : ");
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter number 2 : ");
             num2 = Convert.ToInt32(Console.ReadLine());
-            ComputeSum computeSum = new ComputeSum();
-            int result = computeSum.SumOrTripleofsum(num1, num2);
-            Console.WriteLine(result);
-
+            AbsoluteDifference absoluteDifference = new AbsoluteDifference();
+            int absolutediff = absoluteDifference.CheckAbsoluteDifference(num1, num2);
+            Console.WriteLine("The difference is : "+absolutediff);
         }
     }
 }
