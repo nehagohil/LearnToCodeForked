@@ -63,14 +63,28 @@ namespace ProblemSolution
 
             //7. Write a C# Sharp program to print the output of the multiplication of three numbers entered by the user.
 
-            int num1, num2, num3;
+            //int num1, num2, num3;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 3 : ");
+            //num3 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Multiplication is : " +num1 * num2 * num3);
+
+            //8. Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user
+
+            int num1, num2;
             Console.WriteLine("enter number 1 : ");
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter number 2 : ");
             num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 3 : ");
-            num3 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Multiplication is : " +num1 * num2 * num3);
+            BasicCalculations basicCalculations = new BasicCalculations();
+            basicCalculations.Addition(num1,num2);
+            basicCalculations.Subtraction(num1, num2);
+            basicCalculations.Multiplication(num1,num2);
+            basicCalculations.Division(num1,num2);
+            
         }
     }
 }
