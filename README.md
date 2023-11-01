@@ -17,4 +17,4 @@
 | 13 | Write a C# program that takes a number as input and displays a rectangle of 3 columns wide and 5 rows tall using that digit. | Completed |
 | 14 | Write a C# program to convert Celsius degrees to Kelvin and Fahrenheit| Completed |
 | 15 | Write a C# program that removes a specified character from a non-empty string using the index of a character | Completed |
-| 16 |  | Completed |
+| 16 | Write a C# program to create a new string from a given string where the first and last characters change their positions | Completed |

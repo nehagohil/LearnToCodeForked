@@ -169,20 +169,36 @@ namespace ProblemSolution
             //w3resourc
             //3resource
 
-                string str = "w3resource";
-                char remove = '3';
-                int pos=0;
-                Console.WriteLine("String is : "+str);
-                for(int i=0; i< str.Length;i++)
-                {
-                    if (str[i] == remove)
-                    {
-                        pos = i;
-                    }
+            //string str = "w3resource";
+            //char remove = '3';
+            //int pos=0;
+            //Console.WriteLine("String is : "+str);
+            //for(int i=0; i< str.Length;i++)
+            //{
+            //    if (str[i] == remove)
+            //    {
+            //        pos = i;
+            //    }
 
-                }
-                string newstr = str.Remove(pos,1);
-                Console.Write("After removing the character " +remove + " New string is : "+newstr);
+            //}
+            //string newstr = str.Remove(pos,1);
+            //Console.Write("After removing the character " +remove + " New string is : "+newstr);
+
+            //16. Write a C# program to create a new string from a given string where the first and last characters change their positions.
+            //Test Data:
+            //w3resource
+            //Python
+            //Sample Output:
+            //e3resourcw
+            //nythoP
+
+            string str = "Neha";
+            char[] chararray = str.ToCharArray();
+            char temp = chararray[0];
+            chararray[0] = chararray[str.Length - 1];
+            chararray[str.Length - 1] = temp;    
+            string newstr = new string(chararray);
+            Console.WriteLine(newstr);
         }
     }
 }
