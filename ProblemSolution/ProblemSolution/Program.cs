@@ -93,18 +93,28 @@ namespace ProblemSolution
             //multiplicationTable.PrintMultiplicationTable(num);
 
             // 10.	Write a C# Sharp program that takes four numbers as input to calculate and print the average
-            int num1, num2, num3, num4, average = 4, averageResult;
-            Console.WriteLine("enter number 1 : ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 3 : ");
-            num3 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 4 : ");
-            num4 = Convert.ToInt32(Console.ReadLine());
-            averageResult = (num1 + num2 + num3 + num4) / average;
-            Console.WriteLine("Average of the four input numbers are : " + averageResult);
+            //int num1, num2, num3, num4, average = 4, averageResult;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 3 : ");
+            //num3 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 4 : ");
+            //num4 = Convert.ToInt32(Console.ReadLine());
+            //averageResult = (num1 + num2 + num3 + num4) / average;
+            //Console.WriteLine("Average of the four input numbers are : " + averageResult);
 
+            //11. Write a C# Sharp program that takes three numbers (x,y,z) as input and outputs (x+y).z and x.y + y.z.
+            int x, y, z;
+            Console.WriteLine("enter X : ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter Y : ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter Z : ");
+            z = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine((x+y)*z);
+            Console.WriteLine(x*y + y*z);
         }
     }
 }
