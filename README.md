@@ -20,3 +20,4 @@
 | 16 | Write a C# program to create a new string from a given string where the first and last characters change their positions | Completed |
 | 17 | Write a C# program to create a string from a given string (length 1 or more) with the first character added at the front and back | Completed |
 | 18 | Write a C# program to check a pair of integers and return true if one is negative and one is positive | Completed |
+| 19 | Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum | Completed |

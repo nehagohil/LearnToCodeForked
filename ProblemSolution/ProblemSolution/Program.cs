@@ -219,21 +219,32 @@ namespace ProblemSolution
             //Check if one is negative and one is positive:
             //True
 
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //CheckForNegative checkForNegative = new CheckForNegative();
+            //bool valid = checkForNegative.checkPairOfInteger(num1, num2);
+            //if (valid)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+
+            //19.	Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum
             int num1, num2;
             Console.WriteLine("enter number 1 : ");
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter number 2 : ");
             num2 = Convert.ToInt32(Console.ReadLine());
-            CheckForNegative checkForNegative = new CheckForNegative();
-            bool valid = checkForNegative.checkPairOfInteger(num1, num2);
-            if (valid)
-            {
-                Console.WriteLine(true);
-            }
-            else
-            {
-                Console.WriteLine(false);
-            }
+            ComputeSum computeSum = new ComputeSum();
+            int result = computeSum.SumOrTripleofsum(num1, num2);
+            Console.WriteLine(result);
 
         }
     }
