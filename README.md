@@ -11,3 +11,4 @@
 | 7 | Write a C# Sharp program to print the output of the multiplication of three numbers entered by the user. | Completed |
 | 8 | Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user | Completed |
 | 9 | Write a C# Sharp program that prints the multiplication table of a number as input | Completed |
+| 10 | Write a C# Sharp program that takes four numbers as input to calculate and print the average | Completed |
