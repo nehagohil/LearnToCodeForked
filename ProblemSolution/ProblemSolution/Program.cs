@@ -137,18 +137,29 @@ namespace ProblemSolution
             //Console.WriteLine("{0}", numwithnospace);
 
             // 13. Write a C# program that takes a number as input and displays a rectangle of 3 columns wide and 5 rows tall using that digit.
-            int num;
-            Console.WriteLine("Enter number");
-            num = Convert.ToInt32(Console.ReadLine());
-            for(int i=0; i<5;i++)
-            {
-                for(int j=0; j<3; j++)
-                {
-                    Console.Write(num);
-                }
-                Console.WriteLine();
-            }
+            //int num;
+            //Console.WriteLine("Enter number");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //for(int i=0; i<5;i++)
+            //{
+            //    for(int j=0; j<3; j++)
+            //    {
+            //        Console.Write(num);
+            //    }
+            //    Console.WriteLine();
+            //}
 
+            //14. Write a C# program to convert Celsius degrees to Kelvin and Fahrenheit. Kelvin = Celsius + 273.15
+
+            int celcius;
+            double add = 273.15;
+            double kelvin, Fahrenheit;
+            Console.WriteLine("Please enter celcius degrees to convert : ");
+            celcius = Convert.ToInt32(Console.ReadLine());
+            kelvin = celcius + add;
+            Console.WriteLine("Kelvin conversion is  :" + kelvin);
+            Fahrenheit = (celcius * 9 / 5) + 32;
+            Console.WriteLine("Fahrenheit conversion is  :" + Fahrenheit);
 
         }
     }
