@@ -8,3 +8,4 @@
 | 4 | Write a C# Sharp program to print the results of the specified operations | Completed |
 | 5 | Write a C# Sharp program to swap two numbers using third variable | Completed |
 | 6 | Write a C# Sharp program to swap two numbers without using third variable | Completed |
+| 7 | Write a C# Sharp program to print the output of the multiplication of three numbers entered by the user. | Completed |
