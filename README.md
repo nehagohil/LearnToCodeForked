@@ -6,3 +6,4 @@
 | 2 | Write a C# Sharp program to print Sum of two numbers | Completed |
 | 3 | Write a C# Sharp program to print the result of dividing two numbers | Completed |
 | 4 | Write a C# Sharp program to print the results of the specified operations | Completed |
+| 5 | Write a C# Sharp program to swap two numbers using third variable | Completed |
