@@ -312,14 +312,79 @@ namespace ProblemSolution
 
             //25.	Write a C# program to print odd numbers from 1 to 99. Prints one number per line.
 
-            for (int i=1; i<=99; i++)
-            {
-                if(i % 2 !=0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //for (int i=1; i<=99; i++)
+            //{
+            //    if(i % 2 !=0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
+            //26.	Write a C# program to compute the sum of the first 500 prime numbers
+
+
+            //for(int i=2; i<=10;i++)
+            //{
+            //    bool isPrime = true;
+            //    for (int j=2; j<i;j++)
+            //    {
+            //        if(i % j == 0 && i != j)
+            //        {
+            //            isPrime = false;
+            //        }
+            //    }
+            //    if(isPrime)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            //logic 2
+
+            //int num = 3;
+            //bool isPrime = true;
+            //for (int j = 2; j < num; j++)
+            //{
+            //    if (num % j == 0)
+            //    {
+            //        isPrime = false;
+            //    }
+            //}
+            //if (isPrime)
+            //{
+            //    Console.WriteLine("This number is prime");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not a prime");
+            //}
+
+            int sum = 0;
+            int count = 0;
+            int num = 2;
+            do
+            {
+                bool isPrime = true;
+                for (int i=2; i< num; i++)
+                {
+                    if(num % i ==0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+
+                }
+                if(isPrime)
+                {
+                    sum = sum + num;
+                    Console.WriteLine(num);
+                    count++;
+                }
+                num++;
+
+            } while (count != 500);
+            Console.WriteLine("Sum of prime numbers are : "+sum);
+            
         }
     }
 }

@@ -27,3 +27,4 @@
 | 23 | Write a C# program to convert a given string into lowercase | Completed |
 | 24 | Write a C# program to find the longest word in a string | Completed |
 | 25 | Write a C# program to print odd numbers from 1 to 99. Prints one number per line | Completed |
+| 26 | Write a C# program to compute the sum of the first 500 prime numbers | Completed |
