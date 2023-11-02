@@ -390,19 +390,34 @@ namespace ProblemSolution
             //Input a number(integer): 12
             //Sum of the digits of the said integer: 3
 
-            int num; //532
-            int sum = 0;
-            Console.WriteLine("Enter number to add integers : ");
-            num = Convert.ToInt32(Console.ReadLine());
-            while(num >0)
+            //int num; 
+            //int sum = 0;
+            //Console.WriteLine("Enter number to add integers : ");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //while(num >0)
+            //{
+            //   int rem = num % 10; 
+            //    num = num / 10; 
+            //    sum += rem;
+            //}
+            //Console.WriteLine("sum is :"+sum);
+
+            //28.	Write a C# program to reverse the words of a sentence.
+            //Sample Output:
+            //Original String: Display the pattern like pyramid using the alphabet.
+            //Reverse String: alphabet.the using pyramid like pattern the Display
+
+            string str = "Display the pattern like pyramid using the alphabet.";
+            string[] strarray = str.Split(" ");
+            string newstr = "";
+
+            for (int i = strarray.Length-1; i>=0; i--)
             {
-               int rem = num % 10; //2
-                num = num / 10; 
-                sum += rem;
+                newstr += strarray[i] +" ";
+
             }
-            Console.WriteLine("sum is :"+sum);
 
-
+            Console.Write(newstr);
 
         }
     }
