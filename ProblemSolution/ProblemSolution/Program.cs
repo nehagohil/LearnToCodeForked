@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics.Metrics;
+using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ProblemSolution
@@ -407,17 +408,25 @@ namespace ProblemSolution
             //Original String: Display the pattern like pyramid using the alphabet.
             //Reverse String: alphabet.the using pyramid like pattern the Display
 
-            string str = "Display the pattern like pyramid using the alphabet.";
-            string[] strarray = str.Split(" ");
-            string newstr = "";
+            //string str = "Display the pattern like pyramid using the alphabet.";
+            //string[] strarray = str.Split(" ");
+            //string newstr = "";
 
-            for (int i = strarray.Length-1; i>=0; i--)
-            {
-                newstr += strarray[i] +" ";
+            //for (int i = strarray.Length-1; i>=0; i--)
+            //{
+            //    newstr += strarray[i] +" ";
 
-            }
+            //}
 
-            Console.Write(newstr);
+            //Console.Write(newstr);
+
+            //29.	Write a C# program to find the size of a specified file in bytes.
+            //Sample Output:
+            //Size of a file: 31
+
+            FileInfo file = new FileInfo("C:\\GitDemo/songs.txt");
+            Console.WriteLine(file.Length.ToString());
+
 
         }
     }
