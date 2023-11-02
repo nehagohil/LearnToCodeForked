@@ -25,3 +25,5 @@
 | 21 | Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20 | Completed |
 | 22 | Write a C# program to check if the given integer is within 20 of 100 or 200 | Completed |
 | 23 | Write a C# program to convert a given string into lowercase | Completed |
+| 24 | Write a C# program to find the longest word in a string | Completed |
+| 25 | Write a C# program to print odd numbers from 1 to 99. Prints one number per line | Completed |

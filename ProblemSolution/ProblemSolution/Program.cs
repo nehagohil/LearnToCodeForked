@@ -286,9 +286,30 @@ namespace ProblemSolution
             //Sample Output:
             //write a c# sharp program to display the following pattern using the alphabet
 
-            string str = "My Name Is Neha";
-            CovertToLower covertToLower = new CovertToLower();
-            covertToLower.ConvertStringToLower(str);
+            //string str = "My Name Is Neha";
+            //CovertToLower covertToLower = new CovertToLower();
+            //covertToLower.ConvertStringToLower(str);
+
+            //24.	Write a C# program to find the longest word in a string.
+            //Test Data: Write a C# Sharp Program to display the following pattern using the alphabet.
+            //Sample Output:
+            //following
+
+            //string str = "Write a C# Sharp Program to display the following pattern using the alphabet.";
+            //int max = 0;
+            //string[] strarr = str.Split(" ");
+            //string longest ="";
+            //for (int i=0; i<strarr.Length; i++)
+            //{
+            //    if (strarr[i].Length > max)
+            //    {
+            //        max = strarr[i].Length;
+            //        longest = strarr[i];
+            //    }
+            //}
+
+            //Console.WriteLine("The longest string is  :"+longest);
+            
 
         }
     }
