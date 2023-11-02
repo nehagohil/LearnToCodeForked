@@ -1,4 +1,7 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System.ComponentModel;
+using System.Diagnostics.Metrics;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ProblemSolution
@@ -248,14 +251,197 @@ namespace ProblemSolution
 
             //20.	Write a C# program to get the absolute value of the difference between two given numbers.
             //Return double the absolute value of the difference if the first number is greater than the second number
-            int num1, num2;
-            Console.WriteLine("enter number 1 : ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            AbsoluteDifference absoluteDifference = new AbsoluteDifference();
-            int absolutediff = absoluteDifference.CheckAbsoluteDifference(num1, num2);
-            Console.WriteLine("The difference is : "+absolutediff);
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //AbsoluteDifference absoluteDifference = new AbsoluteDifference();
+            //int absolutediff = absoluteDifference.CheckAbsoluteDifference(num1, num2);
+            //Console.WriteLine("The difference is : "+absolutediff);
+
+            // 21.Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20.
+
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //CheckIntOrSum checkIntOrSum = new CheckIntOrSum();
+            //bool valid = checkIntOrSum.checkforadd(num1, num2);
+            //Console.WriteLine(valid);
+
+            //22.	Write a C# program to check if the given integer is within 20 of 100 or 200.
+            //Sample Output:
+            //Input an integer:
+            //25
+            //False
+
+            //int num1;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //CheckIntOrSum checkIntOrSum1 = new CheckIntOrSum();
+            //bool valid = checkIntOrSum1.checkforabsolute(num1);
+            //Console.WriteLine(valid);
+
+            //23.	Write a C# program to convert a given string into lowercase.
+            //Sample Output:
+            //write a c# sharp program to display the following pattern using the alphabet
+
+            //string str = "My Name Is Neha";
+            //CovertToLower covertToLower = new CovertToLower();
+            //covertToLower.ConvertStringToLower(str);
+
+            //24.	Write a C# program to find the longest word in a string.
+            //Test Data: Write a C# Sharp Program to display the following pattern using the alphabet.
+            //Sample Output:
+            //following
+
+            //string str = "Write a C# Sharp Program to display the following pattern using the alphabet.";
+            //int max = 0;
+            //string[] strarr = str.Split(" ");
+            //string longest ="";
+            //for (int i=0; i<strarr.Length; i++)
+            //{
+            //    if (strarr[i].Length > max)
+            //    {
+            //        max = strarr[i].Length;
+            //        longest = strarr[i];
+            //    }
+            //}
+
+            //Console.WriteLine("The longest string is  :"+longest);
+
+            //25.	Write a C# program to print odd numbers from 1 to 99. Prints one number per line.
+
+            //for (int i=1; i<=99; i++)
+            //{
+            //    if(i % 2 !=0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            //26.	Write a C# program to compute the sum of the first 500 prime numbers
+
+
+            //for(int i=2; i<=10;i++)
+            //{
+            //    bool isPrime = true;
+            //    for (int j=2; j<i;j++)
+            //    {
+            //        if(i % j == 0 && i != j)
+            //        {
+            //            isPrime = false;
+            //        }
+            //    }
+            //    if(isPrime)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            //logic 2
+
+            //int num = 3;
+            //bool isPrime = true;
+            //for (int j = 2; j < num; j++)
+            //{
+            //    if (num % j == 0)
+            //    {
+            //        isPrime = false;
+            //    }
+            //}
+            //if (isPrime)
+            //{
+            //    Console.WriteLine("This number is prime");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not a prime");
+            //}
+
+            //int sum = 0;
+            //int count = 0;
+            //int num = 2;
+            //do
+            //{
+            //    bool isPrime = true;
+            //    for (int i=2; i< num; i++)
+            //    {
+            //        if(num % i ==0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+
+            //    }
+            //    if(isPrime)
+            //    {
+            //        sum = sum + num;
+            //        Console.WriteLine(num);
+            //        count++;
+            //    }
+            //    num++;
+
+            //} while (count != 500);
+            //Console.WriteLine("Sum of prime numbers are : "+sum);
+
+            //27.Write a C# program and compute the sum of an integer's digits.
+            //Sample Output:
+            //Input a number(integer): 12
+            //Sum of the digits of the said integer: 3
+
+            //int num; 
+            //int sum = 0;
+            //Console.WriteLine("Enter number to add integers : ");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //while(num >0)
+            //{
+            //   int rem = num % 10; 
+            //    num = num / 10; 
+            //    sum += rem;
+            //}
+            //Console.WriteLine("sum is :"+sum);
+
+            //28.	Write a C# program to reverse the words of a sentence.
+            //Sample Output:
+            //Original String: Display the pattern like pyramid using the alphabet.
+            //Reverse String: alphabet.the using pyramid like pattern the Display
+
+            //string str = "Display the pattern like pyramid using the alphabet.";
+            //string[] strarray = str.Split(" ");
+            //string newstr = "";
+
+            //for (int i = strarray.Length-1; i>=0; i--)
+            //{
+            //    newstr += strarray[i] +" ";
+
+            //}
+
+            //Console.Write(newstr);
+
+            //29.	Write a C# program to find the size of a specified file in bytes.
+            //Sample Output:
+            //Size of a file: 31
+
+            //FileInfo file = new FileInfo("C:\\GitDemo/songs.txt");
+            //Console.WriteLine(file.Length.ToString());
+
+            //30.	Write a C# program to convert a hexadecimal number to a decimal number.
+            //Sample Output:
+            //Hexadecimal number: 4B0
+            //Convert to -
+            //Decimal number: 1200
+
+            //string hexnum = "4B0";
+            //int decimalValue =int.Parse(hexnum, System.Globalization.NumberStyles.HexNumber);
+            //Console.WriteLine("Conversion from HEX to Decimal is :" +decimalValue);
+
+            //31.Program to Find Sum of N Numbers using Recursion.
+            AdditionUsingRecursion additionUsingRecursion = new AdditionUsingRecursion();
+            additionUsingRecursion.SumUsingRecursion();
         }
+       
     }
 }

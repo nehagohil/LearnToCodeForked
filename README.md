@@ -22,3 +22,16 @@
 | 18 | Write a C# program to check a pair of integers and return true if one is negative and one is positive | Completed |
 | 19 | Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum | Completed |
 | 20 | Write a C# program to get the absolute value of the difference between two given numbers. | Completed |
+| 21 | Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20 | Completed |
+| 22 | Write a C# program to check if the given integer is within 20 of 100 or 200 | Completed |
+| 23 | Write a C# program to convert a given string into lowercase | Completed |
+| 24 | Write a C# program to find the longest word in a string | Completed |
+| 25 | Write a C# program to print odd numbers from 1 to 99. Prints one number per line | Completed |
+| 26 | Write a C# program to compute the sum of the first 500 prime numbers | Completed |
+| 27 | Write a C# program and compute the sum of an integer's digits | Completed |
+| 28 | Write a C# program to reverse the words of a sentence | Completed |
+| 29 | Write a C# program to find the size of a specified file in bytes | Completed |
+| 30 | Write a C# program to convert a hexadecimal number to a decimal number | Completed |
+| 31 | Program to Find Sum of N Numbers using Recursion. | Completed |
+
+
