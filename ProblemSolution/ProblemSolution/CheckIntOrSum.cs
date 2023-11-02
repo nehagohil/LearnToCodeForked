@@ -20,5 +20,15 @@ namespace ProblemSolution
             else
                 return false;
         }
+
+        public bool checkforabsolute(int num1)
+        {
+            if (Math.Abs(num1 - 100) <= 20 || Math.Abs(num1 - 200) <= 20)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
     }
 }

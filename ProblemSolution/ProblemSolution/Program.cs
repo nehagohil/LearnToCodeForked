@@ -259,14 +259,31 @@ namespace ProblemSolution
 
             // 21.Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20.
 
-            int num1, num2;
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //CheckIntOrSum checkIntOrSum = new CheckIntOrSum();
+            //bool valid = checkIntOrSum.checkforadd(num1, num2);
+            //Console.WriteLine(valid);
+
+            //22.	Write a C# program to check if the given integer is within 20 of 100 or 200.
+            //Sample Output:
+            //Input an integer:
+            //25
+            //False
+
+            int num1;
             Console.WriteLine("enter number 1 : ");
             num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            CheckIntOrSum checkIntOrSum = new CheckIntOrSum();
-            bool valid = checkIntOrSum.checkforadd(num1, num2);
+            CheckIntOrSum checkIntOrSum1 = new CheckIntOrSum();
+            bool valid = checkIntOrSum1.checkforabsolute(num1);
             Console.WriteLine(valid);
+
+
+
+
 
         }
     }
