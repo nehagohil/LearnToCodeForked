@@ -424,9 +424,18 @@ namespace ProblemSolution
             //Sample Output:
             //Size of a file: 31
 
-            FileInfo file = new FileInfo("C:\\GitDemo/songs.txt");
-            Console.WriteLine(file.Length.ToString());
+            //FileInfo file = new FileInfo("C:\\GitDemo/songs.txt");
+            //Console.WriteLine(file.Length.ToString());
 
+            //30.	Write a C# program to convert a hexadecimal number to a decimal number.
+            //Sample Output:
+            //Hexadecimal number: 4B0
+            //Convert to -
+            //Decimal number: 1200
+
+            string hexnum = "4B0";
+            int decimalValue =int.Parse(hexnum, System.Globalization.NumberStyles.HexNumber);
+            Console.WriteLine("Conversion from HEX to Decimal is :" +decimalValue);
 
         }
     }

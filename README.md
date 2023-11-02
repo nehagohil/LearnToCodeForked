@@ -31,5 +31,6 @@
 | 27 | Write a C# program and compute the sum of an integer's digits | Completed |
 | 28 | Write a C# program to reverse the words of a sentence | Completed |
 | 29 | Write a C# program to find the size of a specified file in bytes | Completed |
+| 30 | Write a C# program to convert a hexadecimal number to a decimal number | Completed |
 
 
