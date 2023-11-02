@@ -359,32 +359,51 @@ namespace ProblemSolution
             //    Console.WriteLine("Not a prime");
             //}
 
+            //int sum = 0;
+            //int count = 0;
+            //int num = 2;
+            //do
+            //{
+            //    bool isPrime = true;
+            //    for (int i=2; i< num; i++)
+            //    {
+            //        if(num % i ==0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+
+            //    }
+            //    if(isPrime)
+            //    {
+            //        sum = sum + num;
+            //        Console.WriteLine(num);
+            //        count++;
+            //    }
+            //    num++;
+
+            //} while (count != 500);
+            //Console.WriteLine("Sum of prime numbers are : "+sum);
+
+            //27.Write a C# program and compute the sum of an integer's digits.
+            //Sample Output:
+            //Input a number(integer): 12
+            //Sum of the digits of the said integer: 3
+
+            int num; //532
             int sum = 0;
-            int count = 0;
-            int num = 2;
-            do
+            Console.WriteLine("Enter number to add integers : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            while(num >0)
             {
-                bool isPrime = true;
-                for (int i=2; i< num; i++)
-                {
-                    if(num % i ==0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
+               int rem = num % 10; //2
+                num = num / 10; 
+                sum += rem;
+            }
+            Console.WriteLine("sum is :"+sum);
 
-                }
-                if(isPrime)
-                {
-                    sum = sum + num;
-                    Console.WriteLine(num);
-                    count++;
-                }
-                num++;
 
-            } while (count != 500);
-            Console.WriteLine("Sum of prime numbers are : "+sum);
-            
+
         }
     }
 }
