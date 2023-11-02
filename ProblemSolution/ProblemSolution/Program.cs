@@ -248,14 +248,26 @@ namespace ProblemSolution
 
             //20.	Write a C# program to get the absolute value of the difference between two given numbers.
             //Return double the absolute value of the difference if the first number is greater than the second number
+            //int num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //AbsoluteDifference absoluteDifference = new AbsoluteDifference();
+            //int absolutediff = absoluteDifference.CheckAbsoluteDifference(num1, num2);
+            //Console.WriteLine("The difference is : "+absolutediff);
+
+            // 21.Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20.
+
             int num1, num2;
             Console.WriteLine("enter number 1 : ");
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter number 2 : ");
             num2 = Convert.ToInt32(Console.ReadLine());
-            AbsoluteDifference absoluteDifference = new AbsoluteDifference();
-            int absolutediff = absoluteDifference.CheckAbsoluteDifference(num1, num2);
-            Console.WriteLine("The difference is : "+absolutediff);
+            CheckIntOrSum checkIntOrSum = new CheckIntOrSum();
+            bool valid = checkIntOrSum.checkforadd(num1, num2);
+            Console.WriteLine(valid);
+
         }
     }
 }

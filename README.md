@@ -22,3 +22,4 @@
 | 18 | Write a C# program to check a pair of integers and return true if one is negative and one is positive | Completed |
 | 19 | Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum | Completed |
 | 20 | Write a C# program to get the absolute value of the difference between two given numbers. | Completed |
+| 21 | Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20 | Completed |
