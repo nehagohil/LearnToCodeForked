@@ -439,9 +439,20 @@ namespace ProblemSolution
             //Console.WriteLine("Conversion from HEX to Decimal is :" +decimalValue);
 
             //31.Program to Find Sum of N Numbers using Recursion.
-            AdditionUsingRecursion additionUsingRecursion = new AdditionUsingRecursion();
-            additionUsingRecursion.SumUsingRecursion();
+            //AdditionUsingRecursion additionUsingRecursion = new AdditionUsingRecursion();
+            //additionUsingRecursion.SumUsingRecursion();
+
+            //32.C# Program to Multiply two Floating Point Numbers
+            double multiplication;
+            float num1, num2;
+            Console.WriteLine("enter number 1 : ");
+            num1 = (float) Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("enter number 2 : ");
+            num2 = (float)Convert.ToDouble(Console.ReadLine());
+
+            multiplication = num1 * num2;
+            Console.WriteLine(multiplication);
         }
-       
+
     }
 }
