@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ProblemSolution
@@ -274,16 +275,20 @@ namespace ProblemSolution
             //25
             //False
 
-            int num1;
-            Console.WriteLine("enter number 1 : ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            CheckIntOrSum checkIntOrSum1 = new CheckIntOrSum();
-            bool valid = checkIntOrSum1.checkforabsolute(num1);
-            Console.WriteLine(valid);
+            //int num1;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //CheckIntOrSum checkIntOrSum1 = new CheckIntOrSum();
+            //bool valid = checkIntOrSum1.checkforabsolute(num1);
+            //Console.WriteLine(valid);
 
+            //23.	Write a C# program to convert a given string into lowercase.
+            //Sample Output:
+            //write a c# sharp program to display the following pattern using the alphabet
 
-
-
+            string str = "My Name Is Neha";
+            CovertToLower covertToLower = new CovertToLower();
+            covertToLower.ConvertStringToLower(str);
 
         }
     }

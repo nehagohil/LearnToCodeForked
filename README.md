@@ -24,3 +24,4 @@
 | 20 | Write a C# program to get the absolute value of the difference between two given numbers. | Completed |
 | 21 | Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20 | Completed |
 | 22 | Write a C# program to check if the given integer is within 20 of 100 or 200 | Completed |
+| 23 | Write a C# program to convert a given string into lowercase | Completed |
