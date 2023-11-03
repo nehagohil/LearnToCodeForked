@@ -8,6 +8,7 @@ namespace ProblemSolution
 {
     public class AdditionUsingRecursion
     {
+       
         public void SumUsingRecursion()
         {
             int num = 5;
@@ -22,6 +23,18 @@ namespace ProblemSolution
         public int add(int num)
         {
             return num + add(num--);    
+        }
+
+        public void ReverseNumberUsingRecusrion(int num)
+        {
+            while(num > 0)
+            {
+
+            }
+        }
+        public int reverse()
+        {
+            return Newnum;
         }
     }
 }

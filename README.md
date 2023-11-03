@@ -34,5 +34,6 @@
 | 30 | Write a C# program to convert a hexadecimal number to a decimal number | Completed |
 | 31 | Program to Find Sum of N Numbers using Recursion. | Incomplete |
 | 32 | C# Program to Multiply two Floating Point Numbers | Completed |
+| 33 | Reverse Number using Recursion in C | Completed |
 
 

@@ -452,6 +452,14 @@ namespace ProblemSolution
 
             multiplication = num1 * num2;
             Console.WriteLine(multiplication);
+
+            //33.Reverse Number using Recursion in C
+            //543
+            int num = 543;
+            AdditionUsingRecursion additionUsingRecursion1 = new AdditionUsingRecursion();
+            additionUsingRecursion1.ReverseNumberUsingRecusrion();
+
+
         }
 
     }
