@@ -468,9 +468,18 @@ namespace ProblemSolution
             //Console.WriteLine("Size of Boolean is " + sizeof(bool));
 
             //38.C# Program to Print ASCII Value of character
-            char ch = 'A';
-            Console.WriteLine("ASCII value of a character is : "+ Convert.ToInt32(ch));
+            //char ch = 'A';
+            //Console.WriteLine("ASCII value of a character is : "+ Convert.ToInt32(ch));
 
+            //39.Write a C# Sharp program to find the length of a string without using a library function.
+            string str = "My name is Neha";
+            Console.WriteLine("Using function length is :"+str.Length);
+            int count = 0;
+            foreach (var item in str)
+            {
+                count++;
+            }
+            Console.WriteLine("Length of the string is :"+count);
         }
 
     }
