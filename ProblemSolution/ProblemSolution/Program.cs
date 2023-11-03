@@ -503,19 +503,28 @@ namespace ProblemSolution
             //}
 
             //42.C# Program to Find the Largest Number using Conditional Operator
-            int num1, num2;
-            Console.WriteLine("Enter the number 1 :");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the number 2 :");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            if(num1 > num2)
+            //int num1, num2;
+            //Console.WriteLine("Enter the number 1 :");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 2 :");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //if(num1 > num2)
+            //{
+            //    Console.WriteLine("Num1 is largest");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Num2 is largest");
+            //}
+
+            //43.Write a program in C# Sharp to print individual characters of the string in reverse order.
+            string str = "Shivam is a bad boy";
+            char[] chararr = str.ToCharArray();
+            for (int i = chararr.Length -1; i >=0; i--)
             {
-                Console.WriteLine("Num1 is largest");
+                Console.WriteLine(chararr[i]);
             }
-            else
-            {
-                Console.WriteLine("Num2 is largest");
-            }
+
         }
 
     }
