@@ -442,16 +442,115 @@ namespace ProblemSolution
             //AdditionUsingRecursion additionUsingRecursion = new AdditionUsingRecursion();
             //additionUsingRecursion.SumUsingRecursion();
 
-            //32.C# Program to Multiply two Floating Point Numbers
-            double multiplication;
-            float num1, num2;
-            Console.WriteLine("enter number 1 : ");
-            num1 = (float) Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = (float)Convert.ToDouble(Console.ReadLine());
+            ////32.C# Program to Multiply two Floating Point Numbers
+            //double multiplication;
+            //float num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = (float) Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = (float)Convert.ToDouble(Console.ReadLine());
 
-            multiplication = num1 * num2;
-            Console.WriteLine(multiplication);
+            //multiplication = num1 * num2;
+            //Console.WriteLine(multiplication);
+
+            //33.Reverse Number using Recursion in C
+            //AdditionUsingRecursion additionUsingRecursion1 = new AdditionUsingRecursion();
+            //additionUsingRecursion1.ReverseMain();
+
+            //35.Prime Number using Recursion in C
+
+
+            //36.C# Program to find the Size of data types
+            //Console.WriteLine("Size of Int is " +sizeof(int));
+            //Console.WriteLine("Size of Float is " + sizeof(float));
+            //Console.WriteLine("Size of Double is " + sizeof(double));
+            //Console.WriteLine("Size of Character is " + sizeof(char));
+            //Console.WriteLine("Size of Boolean is " + sizeof(bool));
+
+            //38.C# Program to Print ASCII Value of character
+            //char ch = 'A';
+            //Console.WriteLine("ASCII value of a character is : "+ Convert.ToInt32(ch));
+
+            //39.Write a C# Sharp program to find the length of a string without using a library function.
+            //string str = "My name is Neha";
+            //Console.WriteLine("Using function length is :"+str.Length);
+            //int count = 0;
+            //foreach (var item in str)
+            //{
+            //    count++;
+            //}
+            //Console.WriteLine("Length of the string is :"+count);
+
+            //40.	C# Program to check whether an integer entered by the user is odd or even.
+            //int num;
+            //Console.WriteLine("Enter the number :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //if(num % 2 == 0)
+            //{
+            //    Console.WriteLine("This number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This number is odd");
+            //}
+
+            //41.Write a C# Sharp program to separate individual characters from a string
+            //string str = "Neha is a good girl";
+            //char[] chararr = str.ToCharArray();
+            //for(int i=0; i< chararr.Length; i++)
+            //{
+            //    Console.WriteLine(chararr[i]);
+            //}
+
+            //42.C# Program to Find the Largest Number using Conditional Operator
+            //int num1, num2;
+            //Console.WriteLine("Enter the number 1 :");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 2 :");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //if(num1 > num2)
+            //{
+            //    Console.WriteLine("Num1 is largest");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Num2 is largest");
+            //}
+
+            //43.Write a program in C# Sharp to print individual characters of the string in reverse order.
+            //string str = "Shivam is a bad boy";
+            //char[] chararr = str.ToCharArray();
+            //for (int i = chararr.Length -1; i >=0; i--)
+            //{
+            //    Console.WriteLine(chararr[i]);
+            //}
+
+            //44.C# Program to Check whether an alphabet is a vowel or not
+            char ch;
+            Console.WriteLine("Enter the character : ");
+            ch = Convert.ToChar(Console.ReadLine().ToLower());
+            Console.WriteLine(ch);
+            switch(ch)
+            {
+                case 'a':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                default:
+                    Console.WriteLine("This is not a vowel");
+                    break;
+            }
         }
 
     }

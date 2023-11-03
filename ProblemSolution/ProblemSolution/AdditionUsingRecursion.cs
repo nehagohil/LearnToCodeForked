@@ -10,18 +10,44 @@ namespace ProblemSolution
     {
         public void SumUsingRecursion()
         {
-            int num = 5;
-            int sum = 0;
-            while (num > 0)
-            {
-                sum = add(num);
-            }
-
-            Console.WriteLine("sum is :" + sum);
+            int num = 10;
+            int result = sum(num);
+            Console.WriteLine("addition using recusrsion is : "+result);
         }
-        public int add(int num)
+        public int sum(int num)
         {
-            return num + add(num--);    
+            if(num == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return num + sum(num-1);
+            }
+        }
+
+        public void ReverseMain()
+        {
+            int num = 123;
+            int newnum = reversenum(num);
+            Console.WriteLine("reverse Number using recursion is : "+newnum);
+
+        }
+        int sumadd = 0;
+
+
+        public int reversenum(int num)
+        {
+            int rem = 0;
+            if (num > 0)
+            {
+                rem = num % 10;
+                sumadd = sumadd * 10 + rem;
+                reversenum(num / 10);
+                
+            }
+            return sumadd;
+
         }
     }
 }
