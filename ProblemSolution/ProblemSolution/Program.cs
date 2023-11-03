@@ -461,11 +461,16 @@ namespace ProblemSolution
 
 
             //36.C# Program to find the Size of data types
-            Console.WriteLine("Size of Int is " +sizeof(int));
-            Console.WriteLine("Size of Float is " + sizeof(float));
-            Console.WriteLine("Size of Double is " + sizeof(double));
-            Console.WriteLine("Size of Character is " + sizeof(char));
-            Console.WriteLine("Size of Boolean is " + sizeof(bool));
+            //Console.WriteLine("Size of Int is " +sizeof(int));
+            //Console.WriteLine("Size of Float is " + sizeof(float));
+            //Console.WriteLine("Size of Double is " + sizeof(double));
+            //Console.WriteLine("Size of Character is " + sizeof(char));
+            //Console.WriteLine("Size of Boolean is " + sizeof(bool));
+
+            //38.C# Program to Print ASCII Value of character
+            char ch = 'A';
+            Console.WriteLine("ASCII value of a character is : "+ Convert.ToInt32(ch));
+
         }
 
     }
