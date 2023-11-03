@@ -35,5 +35,7 @@
 | 31 | Program to Find Sum of N Numbers using Recursion. | Incomplete | Yes |
 | 32 | C# Program to Multiply two Floating Point Numbers | Completed |
 | 33 | Reverse Number using Recursion in C | Completed | Yes |
-
+| 34 | Prime Number using Recursion in C | Incomplete |
+| 35 | C# Program to find the Size of data types | complete |
+| 36 | C# Program to Print ASCII Value of character | complete |
 

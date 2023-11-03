@@ -454,8 +454,18 @@ namespace ProblemSolution
             //Console.WriteLine(multiplication);
 
             //33.Reverse Number using Recursion in C
-            AdditionUsingRecursion additionUsingRecursion1 = new AdditionUsingRecursion();
-            additionUsingRecursion1.ReverseMain();
+            //AdditionUsingRecursion additionUsingRecursion1 = new AdditionUsingRecursion();
+            //additionUsingRecursion1.ReverseMain();
+
+            //35.Prime Number using Recursion in C
+
+
+            //36.C# Program to find the Size of data types
+            Console.WriteLine("Size of Int is " +sizeof(int));
+            Console.WriteLine("Size of Float is " + sizeof(float));
+            Console.WriteLine("Size of Double is " + sizeof(double));
+            Console.WriteLine("Size of Character is " + sizeof(char));
+            Console.WriteLine("Size of Boolean is " + sizeof(bool));
         }
 
     }
