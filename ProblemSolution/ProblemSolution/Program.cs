@@ -442,16 +442,20 @@ namespace ProblemSolution
             //AdditionUsingRecursion additionUsingRecursion = new AdditionUsingRecursion();
             //additionUsingRecursion.SumUsingRecursion();
 
-            //32.C# Program to Multiply two Floating Point Numbers
-            double multiplication;
-            float num1, num2;
-            Console.WriteLine("enter number 1 : ");
-            num1 = (float) Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("enter number 2 : ");
-            num2 = (float)Convert.ToDouble(Console.ReadLine());
+            ////32.C# Program to Multiply two Floating Point Numbers
+            //double multiplication;
+            //float num1, num2;
+            //Console.WriteLine("enter number 1 : ");
+            //num1 = (float) Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("enter number 2 : ");
+            //num2 = (float)Convert.ToDouble(Console.ReadLine());
 
-            multiplication = num1 * num2;
-            Console.WriteLine(multiplication);
+            //multiplication = num1 * num2;
+            //Console.WriteLine(multiplication);
+
+            //33.Reverse Number using Recursion in C
+            AdditionUsingRecursion additionUsingRecursion1 = new AdditionUsingRecursion();
+            additionUsingRecursion1.ReverseMain();
         }
 
     }
