@@ -482,16 +482,24 @@ namespace ProblemSolution
             //Console.WriteLine("Length of the string is :"+count);
 
             //40.	C# Program to check whether an integer entered by the user is odd or even.
-            int num;
-            Console.WriteLine("Enter the number :");
-            num = Convert.ToInt32(Console.ReadLine());
-            if(num % 2 == 0)
+            //int num;
+            //Console.WriteLine("Enter the number :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //if(num % 2 == 0)
+            //{
+            //    Console.WriteLine("This number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This number is odd");
+            //}
+
+            //41.Write a C# Sharp program to separate individual characters from a string
+            string str = "Neha is a good girl";
+            char[] chararr = str.ToCharArray();
+            for(int i=0; i< chararr.Length; i++)
             {
-                Console.WriteLine("This number is even");
-            }
-            else
-            {
-                Console.WriteLine("This number is odd");
+                Console.WriteLine(chararr[i]);
             }
         }
 
