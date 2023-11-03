@@ -518,13 +518,39 @@ namespace ProblemSolution
             //}
 
             //43.Write a program in C# Sharp to print individual characters of the string in reverse order.
-            string str = "Shivam is a bad boy";
-            char[] chararr = str.ToCharArray();
-            for (int i = chararr.Length -1; i >=0; i--)
-            {
-                Console.WriteLine(chararr[i]);
-            }
+            //string str = "Shivam is a bad boy";
+            //char[] chararr = str.ToCharArray();
+            //for (int i = chararr.Length -1; i >=0; i--)
+            //{
+            //    Console.WriteLine(chararr[i]);
+            //}
 
+            //44.C# Program to Check whether an alphabet is a vowel or not
+            char ch;
+            Console.WriteLine("Enter the character : ");
+            ch = Convert.ToChar(Console.ReadLine().ToLower());
+            Console.WriteLine(ch);
+            switch(ch)
+            {
+                case 'a':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("This is a vowel");
+                    break;
+                default:
+                    Console.WriteLine("This is not a vowel");
+                    break;
+            }
         }
 
     }
