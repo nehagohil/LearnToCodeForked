@@ -39,4 +39,5 @@
 | 35 | C# Program to find the Size of data types | complete |
 | 36 | C# Program to Print ASCII Value of character | complete |
 | 37 | Write a C# Sharp program to find the length of a string without using a library function | complete |
+| 38 | C# Program to check whether an integer entered by the user is odd or even. | complete |
 

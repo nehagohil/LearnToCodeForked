@@ -472,14 +472,27 @@ namespace ProblemSolution
             //Console.WriteLine("ASCII value of a character is : "+ Convert.ToInt32(ch));
 
             //39.Write a C# Sharp program to find the length of a string without using a library function.
-            string str = "My name is Neha";
-            Console.WriteLine("Using function length is :"+str.Length);
-            int count = 0;
-            foreach (var item in str)
+            //string str = "My name is Neha";
+            //Console.WriteLine("Using function length is :"+str.Length);
+            //int count = 0;
+            //foreach (var item in str)
+            //{
+            //    count++;
+            //}
+            //Console.WriteLine("Length of the string is :"+count);
+
+            //40.	C# Program to check whether an integer entered by the user is odd or even.
+            int num;
+            Console.WriteLine("Enter the number :");
+            num = Convert.ToInt32(Console.ReadLine());
+            if(num % 2 == 0)
             {
-                count++;
+                Console.WriteLine("This number is even");
             }
-            Console.WriteLine("Length of the string is :"+count);
+            else
+            {
+                Console.WriteLine("This number is odd");
+            }
         }
 
     }
