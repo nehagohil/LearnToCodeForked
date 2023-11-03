@@ -1,7 +1,7 @@
 # LearnToCode
 
-| **Sr.No.** | **Question** | **Status** | 
-  | -- | -- | -- | 
+| **Sr.No.** | **Question** | **Status** | **Inputs Required** |
+  | -- | -- | -- | -- |
 | 1 | Write a C# Sharp program to print Hello and your name in a separate line | Completed |
 | 2 | Write a C# Sharp program to print Sum of two numbers | Completed |
 | 3 | Write a C# Sharp program to print the result of dividing two numbers | Completed |
@@ -32,7 +32,16 @@
 | 28 | Write a C# program to reverse the words of a sentence | Completed |
 | 29 | Write a C# program to find the size of a specified file in bytes | Completed |
 | 30 | Write a C# program to convert a hexadecimal number to a decimal number | Completed |
-| 31 | Program to Find Sum of N Numbers using Recursion. | Incomplete |
+| 31 | Program to Find Sum of N Numbers using Recursion. | Incomplete | Yes |
 | 32 | C# Program to Multiply two Floating Point Numbers | Completed |
-
+| 33 | Reverse Number using Recursion in C | Completed | Yes |
+| 34 | Prime Number using Recursion in C | Incomplete |
+| 35 | C# Program to find the Size of data types | complete |
+| 36 | C# Program to Print ASCII Value of character | complete |
+| 37 | Write a C# Sharp program to find the length of a string without using a library function | complete |
+| 38 | C# Program to check whether an integer entered by the user is odd or even. | complete |
+| 39 | Write a C# Sharp program to separate individual characters from a string | complete |
+| 40 | C# Program to Find the Largest Number using Conditional Operator | complete |
+| 41 | Write a program in C# Sharp to print individual characters of the string in reverse order | complete |
+| 42 | C# Program to Check whether an alphabet is a vowel or not | complete |
 
