@@ -495,11 +495,26 @@ namespace ProblemSolution
             //}
 
             //41.Write a C# Sharp program to separate individual characters from a string
-            string str = "Neha is a good girl";
-            char[] chararr = str.ToCharArray();
-            for(int i=0; i< chararr.Length; i++)
+            //string str = "Neha is a good girl";
+            //char[] chararr = str.ToCharArray();
+            //for(int i=0; i< chararr.Length; i++)
+            //{
+            //    Console.WriteLine(chararr[i]);
+            //}
+
+            //42.C# Program to Find the Largest Number using Conditional Operator
+            int num1, num2;
+            Console.WriteLine("Enter the number 1 :");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number 2 :");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            if(num1 > num2)
             {
-                Console.WriteLine(chararr[i]);
+                Console.WriteLine("Num1 is largest");
+            }
+            else
+            {
+                Console.WriteLine("Num2 is largest");
             }
         }
 
