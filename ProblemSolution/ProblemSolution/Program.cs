@@ -1048,29 +1048,54 @@ namespace ProblemSolution
 
             // 71.Write a C# program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
 
-            int x, y;
-            Console.WriteLine("enter X coordinate :");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter Y coordinate :");
-            y = Convert.ToInt32(Console.ReadLine());
+            //int x, y;
+            //Console.WriteLine("enter X coordinate :");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter Y coordinate :");
+            //y = Convert.ToInt32(Console.ReadLine());
 
-            if( x >= 0 && y >=0)
+            //if( x >= 0 && y >=0)
+            //{
+            //    Console.WriteLine("It is a first quadrant");
+            //}
+            //else if(x < 0 && y >= 0)
+            //{
+            //    Console.WriteLine("It is a second quadrant");
+            //}
+            //else if (x < 0 && y < 0)
+            //{
+            //    Console.WriteLine("It is a third quadrant");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("It is a forth quadrant");
+            //}
+
+            //72.	Write a C# program to determine eligibility for admission to a professional course based on the following criteria: 
+            //Eligibility Criteria : 
+            //Marks in Maths >= 65 and Marks in Phy >= 55 and Marks in Chem >= 50 and Total in all three subject >= 190 or Total in Maths and Physics >= 140
+
+            int maths, physics, chemistry, totalmarks=0, totalmathschemistry =0;
+            Console.WriteLine("enter marks for maths :");
+            maths = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for physics :");
+            physics = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for chemistry :");
+            chemistry = Convert.ToInt32(Console.ReadLine());
+            totalmarks = maths + physics + chemistry;
+            totalmathschemistry = maths + physics;
+
+            if(maths>=65 && physics>=55 && chemistry>=50)
             {
-                Console.WriteLine("It is a first quadrant");
-            }
-            else if(x < 0 && y >= 0)
-            {
-                Console.WriteLine("It is a second quadrant");
-            }
-            else if (x < 0 && y < 0)
-            {
-                Console.WriteLine("It is a third quadrant");
+                if(totalmarks >= 190 || totalmathschemistry>=140)
+                {
+                    Console.WriteLine("You are eligible for an admission");
+                }
             }
             else
             {
-                Console.WriteLine("It is a forth quadrant");
+                Console.WriteLine("Not eligible for an admission");
             }
-
         }
 
     }
