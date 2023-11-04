@@ -786,25 +786,59 @@ namespace ProblemSolution
             //59.	Write a program in C# Sharp to search for the position of a substring within a string.
 
             //60.	Write a C# Sharp program to check whether a character is an alphabet and not and if so, check for the case(upper or lower).
-            char ch;
-            Console.WriteLine("Enter the character :");
-            ch = Convert.ToChar(Console.ReadLine());
-            if(ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z')
+            //char ch;
+            //Console.WriteLine("Enter the character :");
+            //ch = Convert.ToChar(Console.ReadLine());
+            //if(ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z')
+            //{
+            //    Console.WriteLine("This character is an alphabet");
+            //    if(Convert.ToInt32(ch) >=65 && Convert.ToInt32(ch) <= 90)
+            //    {
+            //        Console.WriteLine("This is a uppercase character");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("This is a lowercase character");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This character is not an alphabet");
+            //}
+
+            //61.Write a program in C# Sharp to find the number of times a substring appears in a given string.
+
+            string str = "India is my country. It is very nice.";
+            string substring;
+            Console.WriteLine("Enter substring to check occurances :");
+            substring = Console.ReadLine();
+            int subscount = 0;
+            bool IsEqual = true;
+            char[] charstrarr = str.ToCharArray();
+            char[] charsubsarr = substring.ToCharArray();
+            for(int i=0; i< charstrarr.Length;i++)
             {
-                Console.WriteLine("This character is an alphabet");
-                if(Convert.ToInt32(ch) >=65 && Convert.ToInt32(ch) <= 90)
+                for(int j=0; j< charsubsarr.Length;j++)
                 {
-                    Console.WriteLine("This is a uppercase character");
+                    if (charsubsarr[j] == charstrarr[i])
+                    {
+                        i++;
+                        IsEqual = true;
+                        continue;
+                    }
+                    else
+                    {
+                        IsEqual = false;
+                        break;
+                    }
                 }
-                else
+                if(IsEqual)
                 {
-                    Console.WriteLine("This is a lowercase character");
+                    subscount += 1;
                 }
             }
-            else
-            {
-                Console.WriteLine("This character is not an alphabet");
-            }
+
+            Console.WriteLine("Number of times substring occured is :"+subscount);
         }
 
     }
