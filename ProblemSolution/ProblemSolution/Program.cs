@@ -986,35 +986,64 @@ namespace ProblemSolution
 
             //69.Write a C# program to calculate the total marks, percentage and division of student
 
-            int maths, science, english, socialscience, geography,totalmarks=0;
-            Console.WriteLine("enter marks for maths :");
-            maths = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for science :");
-            science = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for english :");
-            english = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for socialscience :");
-            socialscience = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for geography :");
-            geography = Convert.ToInt32(Console.ReadLine());
+            //int maths, science, english, socialscience, geography,totalmarks=0;
+            //Console.WriteLine("enter marks for maths :");
+            //maths = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for science :");
+            //science = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for english :");
+            //english = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for socialscience :");
+            //socialscience = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for geography :");
+            //geography = Convert.ToInt32(Console.ReadLine());
 
-            totalmarks= maths + science + english + socialscience + geography;
-            Console.WriteLine("Total marks is :"+totalmarks);
+            //totalmarks= maths + science + english + socialscience + geography;
+            //Console.WriteLine("Total marks is :"+totalmarks);
 
-            float percent = (totalmarks *100) /500;
-            Console.WriteLine("Percentage is :" +percent);
+            //float percent = (totalmarks *100) /500;
+            //Console.WriteLine("Percentage is :" +percent);
 
-            if (percent >= 80)
+            //if (percent >= 80)
+            //{
+            //    Console.WriteLine("You are in distinction..");
+            //}
+            //else if(percent >=60 && percent <=79)
+            //{
+            //    Console.WriteLine("You are in first class..");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You passed the exam..");
+            //}
+
+            //70.Write a C# program to enter month number and print number of days in month using switch case
+            int month;
+            Console.WriteLine("enter months to get days :");
+            month = Convert.ToInt32(Console.ReadLine());
+
+            switch (month)
             {
-                Console.WriteLine("You are in distinction..");
-            }
-            else if(percent >=60 && percent <=79)
-            {
-                Console.WriteLine("You are in first class..");
-            }
-            else
-            {
-                Console.WriteLine("You passed the exam..");
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    Console.WriteLine("Number of days are 31");
+                        break;
+
+                case 2:
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    Console.WriteLine("Number of days are 30");
+                    break;
+                default:
+                    Console.WriteLine("please enter correct month");
+                    break;
             }
 
         }
