@@ -890,45 +890,60 @@ namespace ProblemSolution
 
             //65.Write a C# program to print day name of week.
 
-            int day;
-            do
-            {
-                Console.WriteLine("Enter day from 1-7 :");
-                day = Convert.ToInt32(Console.ReadLine());
+            //int day;
+            //do
+            //{
+            //    Console.WriteLine("Enter day from 1-7 :");
+            //    day = Convert.ToInt32(Console.ReadLine());
 
-                switch (day)
-                {
-                    case 1:
-                        Console.WriteLine("This day is Monday");
-                        break;
-                    case 2:
-                        Console.WriteLine("This day is Tuesday");
-                        break;
-                    case 3:
-                        Console.WriteLine("This day is wednesday");
-                        break;
-                    case 4:
-                        Console.WriteLine("This day is thursday");
-                        break;
-                    case 5:
-                        Console.WriteLine("This day is friday");
-                        break;
-                    case 6:
-                        Console.WriteLine("This day is saturday");
-                        break;
-                    case 7:
-                        Console.WriteLine("This day is sunday");
-                        break;
-                    
-                    default:
-                        Console.WriteLine("You have entered incorrect day...please enter between 1 - 7");
-                        break;
-                    //case 10:
-                    //    Environment.Exit(0);
-                    //    break;
-                } 
-            
-            } while (day != 10);
+            //    switch (day)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("This day is Monday");
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("This day is Tuesday");
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("This day is wednesday");
+            //            break;
+            //        case 4:
+            //            Console.WriteLine("This day is thursday");
+            //            break;
+            //        case 5:
+            //            Console.WriteLine("This day is friday");
+            //            break;
+            //        case 6:
+            //            Console.WriteLine("This day is saturday");
+            //            break;
+            //        case 7:
+            //            Console.WriteLine("This day is sunday");
+            //            break;
+
+            //        default:
+            //            Console.WriteLine("You have entered incorrect day...please enter between 1 - 7");
+            //            break;
+            //        //case 10:
+            //        //    Environment.Exit(0);
+            //        //    break;
+            //    } 
+
+            //} while (day != 10);
+
+            //66.Write a C# program to accept two integers and check whether they are equal or not.
+            int num1, num2;
+            Console.WriteLine("Enter number 1: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter number 2: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            if(num1 == num2)
+            {
+                Console.WriteLine("Numbers are equal");
+            }
+            else
+            {
+                Console.WriteLine("Numbers are not equal");
+            }
         }
 
     }

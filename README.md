@@ -66,6 +66,7 @@
 | 62 | Write a C# program to check leap year using conditional Operator | complete |
 | 63 | Write a C# program to check number is positive, negative or zero | complete |
 | 64 | Write a C# program to print day name of week | complete |
+| 65 | Write a C# program to accept two integers and check whether they are equal or not | complete |
 
 
 
