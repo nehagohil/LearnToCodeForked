@@ -653,11 +653,24 @@ namespace ProblemSolution
             //Console.WriteLine(" Count of digits in the string is :" + countdigits);
             //Console.WriteLine(" Count of special characteres in the string is :" + countspecialchar);
 
-            //50.	Write C# program to print alphabets from a to z.
-            for (char i ='a'; i<='z';i++)
+            //50.Write C# program to print alphabets from a to z.
+            //for (char i ='a'; i<='z';i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //51.Write a program in C# Sharp to copy one string to another string and print number of characters copied.
+            string str = "Neha is cutest";
+            string CopiedString = " ";
+            char[] strarr = str.ToCharArray();
+            char[] Copyarr = new char[strarr.Length];
+            for(int i=0; i<strarr.Length;i++)
             {
-                Console.WriteLine(i);
+                Copyarr[i] = strarr[i];
             }
+
+            CopiedString = new string(Copyarr);
+            Console.WriteLine("Copied string is : " + CopiedString);
         }
 
     }
