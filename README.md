@@ -64,6 +64,7 @@
 | 60 | Write a program in C# Sharp to find the number of times a substring appears in a given string | complete |
 | 61 | Write a C# Program to check whether an integer entered by the user is odd or even | complete |
 | 62 | Write a C# program to check leap year using conditional Operator | complete |
+| 63 | Write a C# program to check number is positive, negative or zero | complete |
 
 
 

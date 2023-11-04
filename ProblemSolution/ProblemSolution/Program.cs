@@ -856,20 +856,39 @@ namespace ProblemSolution
             //}
 
             //63.Write a C# program to check leap year using conditional Operator
-            int year;
-            Console.WriteLine("Enter year to check for leap :");
-            year = Convert.ToInt32(Console.ReadLine());
-            bool isLeap = true;
+            //int year;
+            //Console.WriteLine("Enter year to check for leap :");
+            //year = Convert.ToInt32(Console.ReadLine());
+            //bool isLeap = true;
 
-            isLeap = year % 4 == 0 ? true : false;
-            if(isLeap)
+            //isLeap = year % 4 == 0 ? true : false;
+            //if(isLeap)
+            //{
+            //    Console.WriteLine("This year is a leap year");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This year is not a leap year");
+            //}
+
+            //64.Write a C# program to check number is positive, negative or zero.
+            int num;
+            Console.WriteLine("Enter number :");
+            num = Convert.ToInt32(Console.ReadLine());
+            if(num < 0)
             {
-                Console.WriteLine("This year is a leap year");
+                Console.WriteLine("Number is negative");
+            }
+            else if(num > 0)
+            {
+                Console.WriteLine("Number is positive");
             }
             else
             {
-                Console.WriteLine("This year is not a leap year");
+                Console.WriteLine("Number is zero");
             }
+
+
 
         }
 
