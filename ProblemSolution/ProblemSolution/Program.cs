@@ -744,24 +744,45 @@ namespace ProblemSolution
 
             //56.Write a program in C# Sharp to extract a substring from a given string without using the library function.
 
-            string str = "Shivam is my husband";
-            char[] strarr = str.ToCharArray();
-            int startindex, endindex;
-            char[] newchararr = new char[strarr.Length];
-            Console.WriteLine("Given string is :" + str);
-            Console.WriteLine("enter the start index from which you want to get the substring");
-            startindex =Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter the end index from which you want to get the substring");
-            endindex = Convert.ToInt32(Console.ReadLine());
-            for (int i= startindex; i<=endindex; i++)
+            //string str = "Shivam is my husband";
+            //char[] strarr = str.ToCharArray();
+            //int startindex, endindex;
+            //char[] newchararr = new char[strarr.Length];
+            //Console.WriteLine("Given string is :" + str);
+            //Console.WriteLine("enter the start index from which you want to get the substring");
+            //startindex =Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter the end index from which you want to get the substring");
+            //endindex = Convert.ToInt32(Console.ReadLine());
+            //for (int i= startindex; i<=endindex; i++)
+            //{
+            //    newchararr[i] = strarr[i];
+            //}
+
+            //string newstr = new string(newchararr);
+            //Console.WriteLine("Substring is :"+ newstr);
+
+            //57.	Write a C# Sharp program to check whether a given substring is present in the given string
+
+            //58.	Write a C# Sharp program to read a sentence and replace lowercase characters with uppercase and vice-versa.
+
+            //A-Z is 65-90 a-z is 97-122
+            string str = "nEHA iS mY nAME ";
+            char[] chararr = str.ToCharArray();
+            for(int i=0; i<chararr.Length;i++)
             {
-                newchararr[i] = strarr[i];
+                if (Convert.ToInt32(chararr[i]) >=65 && Convert.ToInt32(chararr[i]) <= 90)
+                {
+                    chararr[i] = (char)(Convert.ToInt32(chararr[i]) + 32);
+                }
+                else if(Convert.ToInt32(chararr[i]) >= 97 && Convert.ToInt32(chararr[i]) <= 122)
+                {
+                    chararr[i] = (char)(Convert.ToInt32(chararr[i]) - 32);
+                }
             }
 
-            string newstr = new string(newchararr);
-            Console.WriteLine("Substring is :"+ newstr);
-
+            string newstr = new string(chararr);
+            Console.WriteLine("String is : "+newstr);
         }
-
+        
     }
 }
