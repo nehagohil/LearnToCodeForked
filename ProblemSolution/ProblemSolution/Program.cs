@@ -660,17 +660,28 @@ namespace ProblemSolution
             //}
 
             //51.Write a program in C# Sharp to copy one string to another string and print number of characters copied.
-            string str = "Neha is cutest";
-            string CopiedString = " ";
-            char[] strarr = str.ToCharArray();
-            char[] Copyarr = new char[strarr.Length];
-            for(int i=0; i<strarr.Length;i++)
+            //string str = "Neha is cutest";
+            //string CopiedString = " ";
+            //char[] strarr = str.ToCharArray();
+            //char[] Copyarr = new char[strarr.Length];
+            //for(int i=0; i<strarr.Length;i++)
+            //{
+            //    Copyarr[i] = strarr[i];
+            //}
+
+            //CopiedString = new string(Copyarr);
+            //Console.WriteLine("Copied string is : " + CopiedString);
+
+            //52.Write C# program to print all natural numbers in reverse order
+            int limit;
+            Console.WriteLine("Enter limit to print :");
+            limit = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = limit; i>=1; i--)
             {
-                Copyarr[i] = strarr[i];
+                Console.WriteLine(i);
             }
 
-            CopiedString = new string(Copyarr);
-            Console.WriteLine("Copied string is : " + CopiedString);
         }
 
     }

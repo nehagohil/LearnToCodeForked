@@ -52,6 +52,7 @@
 | 48 | Write a program in C# Sharp to count the number of alphabets, digits and special characters in a string | complete |
 | 49 | Write C# program to print alphabets from a to z | complete |
 | 50 | Write a program in C# Sharp to copy one string to another string and print number of characters copied. | complete |
+| 51 | Write C# program to print all natural numbers in reverse order | complete |
 
 
 
