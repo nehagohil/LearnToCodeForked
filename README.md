@@ -46,5 +46,7 @@
 | 42 | C# Program to Check whether an alphabet is a vowel or not | complete |
 | 43 | Write a program in C# Sharp to count the total number of words in a string | complete |
 | 44 | C# program to check whether a triangle can be formed by the given value for the angles | complete |
+| 45 | Write a program in C# Sharp to compare two strings without using a string library functions | complete |
+
 
 

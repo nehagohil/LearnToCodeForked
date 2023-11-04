@@ -564,23 +564,59 @@ namespace ProblemSolution
             //Console.WriteLine("Total number of words in string are :" +count);
 
             //46.	C# program to check whether a triangle can be formed by the given value for the angles.
-            int angle1, angle2, angle3;
-            int triangleCanForm = 180;
-            Console.WriteLine("enter angle1 : ");
-            angle1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter angle2 : ");
-            angle2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter angle3 : ");
-            angle3 = Convert.ToInt32(Console.ReadLine());
+            //int angle1, angle2, angle3;
+            //int triangleCanForm = 180;
+            //Console.WriteLine("enter angle1 : ");
+            //angle1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter angle2 : ");
+            //angle2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter angle3 : ");
+            //angle3 = Convert.ToInt32(Console.ReadLine());
 
-            if(angle1+angle2+angle3 ==triangleCanForm)
+            //if(angle1+angle2+angle3 ==triangleCanForm)
+            //{
+            //    Console.WriteLine("Yes, Traingle can be formed..");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No, Triangle can't be formed..");
+            //}
+
+            //47.	Write a program in C# Sharp to compare two strings without using a string library functions
+            string str1 = "Neha";
+            string str2 = "Shivam";
+            char[] str1chararr = str1.ToCharArray();
+            char[] str2chararr = str2.ToCharArray();
+            bool IsEqual = true;
+            if(str1chararr.Length == str2chararr.Length)
             {
-                Console.WriteLine("Yes, Traingle can be formed..");
+                for (int i=0; i<str1chararr.Length; i++)
+                {
+                    
+                        if (str1chararr[i] == str2chararr[i])
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            IsEqual = false;
+                            Console.WriteLine("Strings are not equal...");
+                            break;
+                        }
+                }
+                if(IsEqual)
+                {
+                    Console.WriteLine("Strings are equal..");
+                }
+
             }
             else
             {
-                Console.WriteLine("No, Triangle can't be formed..");
+                Console.WriteLine("Strings are not equal");
             }
+
+
+
         }
 
     }
