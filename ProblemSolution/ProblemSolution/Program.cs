@@ -683,38 +683,83 @@ namespace ProblemSolution
             //}
 
             //53.Write a C# Sharp program to count the number of vowels or consonants in a string.
-            string str = "Neha is a sweet girl";
-            int vowelcount = 0, consonantscount = 0;
-            char[] chararr = str.ToCharArray();
+            //string str = "Neha is a sweet girl";
+            //int vowelcount = 0, consonantscount = 0;
+            //char[] chararr = str.ToCharArray();
 
-            foreach (var item in chararr)
+            //foreach (var item in chararr)
+            //{
+            //    switch(item)
+            //    {
+            //        case 'a':
+            //            vowelcount += 1;
+            //            break;
+            //        case 'e':
+            //            vowelcount += 1;
+            //            break;
+            //        case 'i':
+            //            vowelcount += 1;
+            //            break;
+            //        case 'o':
+            //            vowelcount += 1;
+            //            break;
+            //        case 'u':
+            //            vowelcount += 1;
+            //            break;
+            //        case ' ':
+            //            break;
+            //        default:
+            //            consonantscount += 1;
+            //            break;
+            //    }
+            //}
+            //Console.WriteLine("Number of vowels :"+vowelcount);
+            //Console.WriteLine("Number of Consonants :"+consonantscount);
+
+            //54.Write a C# Sharp program to find the maximum number of characters in a string
+
+
+            //55.Write a C# Sharp program to sort a string array in ascending order.
+
+            //string str = "Siraj Shivam";
+            //string[] strarr = str.Split(" ");
+            //string temp = "";
+
+            //for(int i=0; i<strarr.Length;i++)
+            //{
+            //    for (int j=i+1; j<strarr.Length;j++)
+            //    {
+            //        if ((strarr[i])[i] > (strarr[j])[i])
+            //        {
+            //            temp = strarr[i];
+            //            strarr[i] = strarr[j];
+            //            strarr[j] = temp; 
+            //        }
+            //    }
+            //}
+            //for(int k=0; k<strarr.Length;k++)
+            //{
+            //    Console.WriteLine(strarr[k]);
+            //}
+
+            //56.Write a program in C# Sharp to extract a substring from a given string without using the library function.
+
+            string str = "Shivam is my husband";
+            char[] strarr = str.ToCharArray();
+            int startindex, endindex;
+            char[] newchararr = new char[strarr.Length];
+            Console.WriteLine("Given string is :" + str);
+            Console.WriteLine("enter the start index from which you want to get the substring");
+            startindex =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the end index from which you want to get the substring");
+            endindex = Convert.ToInt32(Console.ReadLine());
+            for (int i= startindex; i<=endindex; i++)
             {
-                switch(item)
-                {
-                    case 'a':
-                        vowelcount += 1;
-                        break;
-                    case 'e':
-                        vowelcount += 1;
-                        break;
-                    case 'i':
-                        vowelcount += 1;
-                        break;
-                    case 'o':
-                        vowelcount += 1;
-                        break;
-                    case 'u':
-                        vowelcount += 1;
-                        break;
-                    case ' ':
-                        break;
-                    default:
-                        consonantscount += 1;
-                        break;
-                }
+                newchararr[i] = strarr[i];
             }
-            Console.WriteLine("Number of vowels :"+vowelcount);
-            Console.WriteLine("Number of Consonants :"+consonantscount);
+
+            string newstr = new string(newchararr);
+            Console.WriteLine("Substring is :"+ newstr);
 
         }
 
