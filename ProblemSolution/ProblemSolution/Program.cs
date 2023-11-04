@@ -960,29 +960,63 @@ namespace ProblemSolution
             //}
 
             //68.Write a C# program to find the eligibility of admission for an engineering course based on the criteria.
-            int physics, chemistry, maths;
-            Console.WriteLine("enter marks for Physics :");
-            physics = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for chemistry :");
-            chemistry = Convert.ToInt32(Console.ReadLine());
+            //int physics, chemistry, maths;
+            //Console.WriteLine("enter marks for Physics :");
+            //physics = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for chemistry :");
+            //chemistry = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for maths :");
+            //maths = Convert.ToInt32(Console.ReadLine());
+
+            //if(physics > 35 && chemistry >35 && maths>35)
+            //{
+            //    if (physics + chemistry + maths > 200)
+            //    {
+            //        Console.WriteLine("You are eligible for engineering admission");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You are not eligible for engineering admission");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are not eligible for engineering admission");
+            //}
+
+            //69.Write a C# program to calculate the total marks, percentage and division of student
+
+            int maths, science, english, socialscience, geography,totalmarks=0;
             Console.WriteLine("enter marks for maths :");
             maths = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for science :");
+            science = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for english :");
+            english = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for socialscience :");
+            socialscience = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for geography :");
+            geography = Convert.ToInt32(Console.ReadLine());
 
-            if(physics > 35 && chemistry >35 && maths>35)
+            totalmarks= maths + science + english + socialscience + geography;
+            Console.WriteLine("Total marks is :"+totalmarks);
+
+            float percent = (totalmarks *100) /500;
+            Console.WriteLine("Percentage is :" +percent);
+
+            if (percent >= 80)
             {
-                if (physics + chemistry + maths > 200)
-                {
-                    Console.WriteLine("You are eligible for engineering admission");
-                }
-                else
-                {
-                    Console.WriteLine("You are not eligible for engineering admission");
-                }
+                Console.WriteLine("You are in distinction..");
+            }
+            else if(percent >=60 && percent <=79)
+            {
+                Console.WriteLine("You are in first class..");
             }
             else
             {
-                Console.WriteLine("You are not eligible for engineering admission");
+                Console.WriteLine("You passed the exam..");
             }
+
         }
 
     }
