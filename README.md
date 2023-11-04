@@ -71,6 +71,8 @@
 | 67 | Write a C# program to find the eligibility of admission for an engineering course based on the criteria | complete |
 | 68 | Write a C# program to calculate the total marks, percentage and division of student | complete |
 | 69 | Write a C# program to enter month number and print number of days in month using switch case | complete |
+| 70 | Write a C# program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies | complete |
+
 
 
 

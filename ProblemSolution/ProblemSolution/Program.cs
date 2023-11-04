@@ -1018,32 +1018,57 @@ namespace ProblemSolution
             //}
 
             //70.Write a C# program to enter month number and print number of days in month using switch case
-            int month;
-            Console.WriteLine("enter months to get days :");
-            month = Convert.ToInt32(Console.ReadLine());
+            //int month;
+            //Console.WriteLine("enter months to get days :");
+            //month = Convert.ToInt32(Console.ReadLine());
 
-            switch (month)
+            //switch (month)
+            //{
+            //    case 1:
+            //    case 3:
+            //    case 5:
+            //    case 7:
+            //    case 8:
+            //    case 10:
+            //    case 12:
+            //        Console.WriteLine("Number of days are 31");
+            //            break;
+
+            //    case 2:
+            //    case 4:
+            //    case 6:
+            //    case 9:
+            //    case 11:
+            //        Console.WriteLine("Number of days are 30");
+            //        break;
+            //    default:
+            //        Console.WriteLine("please enter correct month");
+            //        break;
+            //}
+
+            // 71.Write a C# program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+
+            int x, y;
+            Console.WriteLine("enter X coordinate :");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter Y coordinate :");
+            y = Convert.ToInt32(Console.ReadLine());
+
+            if( x >= 0 && y >=0)
             {
-                case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
-                    Console.WriteLine("Number of days are 31");
-                        break;
-
-                case 2:
-                case 4:
-                case 6:
-                case 9:
-                case 11:
-                    Console.WriteLine("Number of days are 30");
-                    break;
-                default:
-                    Console.WriteLine("please enter correct month");
-                    break;
+                Console.WriteLine("It is a first quadrant");
+            }
+            else if(x < 0 && y >= 0)
+            {
+                Console.WriteLine("It is a second quadrant");
+            }
+            else if (x < 0 && y < 0)
+            {
+                Console.WriteLine("It is a third quadrant");
+            }
+            else
+            {
+                Console.WriteLine("It is a forth quadrant");
             }
 
         }
