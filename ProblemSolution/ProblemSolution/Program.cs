@@ -947,16 +947,41 @@ namespace ProblemSolution
 
             //67.Write a C# program to detrermine a candidate’s age is eligible for casting the vote or not.
 
-            int age;
-            Console.WriteLine("Enter age: ");
-            age = Convert.ToInt32(Console.ReadLine());
-            if(age >= 18)
+            //int age;
+            //Console.WriteLine("Enter age: ");
+            //age = Convert.ToInt32(Console.ReadLine());
+            //if(age >= 18)
+            //{
+            //    Console.WriteLine("This age is eligible for casting vote.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This age is not eligible for casting vote.");
+            //}
+
+            //68.Write a C# program to find the eligibility of admission for an engineering course based on the criteria.
+            int physics, chemistry, maths;
+            Console.WriteLine("enter marks for Physics :");
+            physics = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for chemistry :");
+            chemistry = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter marks for maths :");
+            maths = Convert.ToInt32(Console.ReadLine());
+
+            if(physics > 35 && chemistry >35 && maths>35)
             {
-                Console.WriteLine("This age is eligible for casting vote.");
+                if (physics + chemistry + maths > 200)
+                {
+                    Console.WriteLine("You are eligible for engineering admission");
+                }
+                else
+                {
+                    Console.WriteLine("You are not eligible for engineering admission");
+                }
             }
             else
             {
-                Console.WriteLine("This age is not eligible for casting vote.");
+                Console.WriteLine("You are not eligible for engineering admission");
             }
         }
 
