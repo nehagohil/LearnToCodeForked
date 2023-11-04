@@ -673,14 +673,48 @@ namespace ProblemSolution
             //Console.WriteLine("Copied string is : " + CopiedString);
 
             //52.Write C# program to print all natural numbers in reverse order
-            int limit;
-            Console.WriteLine("Enter limit to print :");
-            limit = Convert.ToInt32(Console.ReadLine());
+            //int limit;
+            //Console.WriteLine("Enter limit to print :");
+            //limit = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = limit; i>=1; i--)
+            //for (int i = limit; i>=1; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //53.Write a C# Sharp program to count the number of vowels or consonants in a string.
+            string str = "Neha is a sweet girl";
+            int vowelcount = 0, consonantscount = 0;
+            char[] chararr = str.ToCharArray();
+
+            foreach (var item in chararr)
             {
-                Console.WriteLine(i);
+                switch(item)
+                {
+                    case 'a':
+                        vowelcount += 1;
+                        break;
+                    case 'e':
+                        vowelcount += 1;
+                        break;
+                    case 'i':
+                        vowelcount += 1;
+                        break;
+                    case 'o':
+                        vowelcount += 1;
+                        break;
+                    case 'u':
+                        vowelcount += 1;
+                        break;
+                    case ' ':
+                        break;
+                    default:
+                        consonantscount += 1;
+                        break;
+                }
             }
+            Console.WriteLine("Number of vowels :"+vowelcount);
+            Console.WriteLine("Number of Consonants :"+consonantscount);
 
         }
 
