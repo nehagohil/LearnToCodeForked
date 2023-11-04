@@ -63,6 +63,7 @@
 | 59 | Write a C# Sharp program to check whether a character is an alphabet and not and if so, check for the case(upper or lower) | complete |
 | 60 | Write a program in C# Sharp to find the number of times a substring appears in a given string | complete |
 | 61 | Write a C# Program to check whether an integer entered by the user is odd or even | complete |
+| 62 | Write a C# program to check leap year using conditional Operator | complete |
 
 
 

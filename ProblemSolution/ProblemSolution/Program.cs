@@ -842,18 +842,35 @@ namespace ProblemSolution
 
             //62.Write a C# Program to check whether an integer entered by the user is odd or even
 
-            int num;
-            Console.WriteLine("Enter number :");
-            num = Convert.ToInt32(Console.ReadLine());
+            //int num;
+            //Console.WriteLine("Enter number :");
+            //num = Convert.ToInt32(Console.ReadLine());
 
-            if(num % 2 == 0)
+            //if(num % 2 == 0)
+            //{
+            //    Console.WriteLine("Number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number is odd");
+            //}
+
+            //63.Write a C# program to check leap year using conditional Operator
+            int year;
+            Console.WriteLine("Enter year to check for leap :");
+            year = Convert.ToInt32(Console.ReadLine());
+            bool isLeap = true;
+
+            isLeap = year % 4 == 0 ? true : false;
+            if(isLeap)
             {
-                Console.WriteLine("Number is even");
+                Console.WriteLine("This year is a leap year");
             }
             else
             {
-                Console.WriteLine("Number is odd");
+                Console.WriteLine("This year is not a leap year");
             }
+
         }
 
     }
