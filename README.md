@@ -57,8 +57,11 @@
 | 53 | Write a C# Sharp program to find the maximum number of characters in a string | Incomplete |
 | 54 | Write a C# Sharp program to sort a string array in ascending order | Incomplete |
 | 55 | Write a program in C# Sharp to extract a substring from a given string without using the library function | complete |
-| 56 | Write a C# Sharp program to check whether a given substring is present in the given string | complete |
+| 56 | Write a C# Sharp program to check whether a given substring is present in the given string | Incomplete |
 | 57 | Write a C# Sharp program to read a sentence and replace lowercase characters with uppercase and vice-versa | complete |
+| 58 | Write a program in C# Sharp to search for the position of a substring within a string | incomplete |
+| 59 | Write a C# Sharp program to check whether a character is an alphabet and not and if so, check for the case(upper or lower) | incomplete |
+
 
 
 

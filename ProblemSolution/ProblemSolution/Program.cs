@@ -766,23 +766,46 @@ namespace ProblemSolution
             //58.	Write a C# Sharp program to read a sentence and replace lowercase characters with uppercase and vice-versa.
 
             //A-Z is 65-90 a-z is 97-122
-            string str = "nEHA iS mY nAME ";
-            char[] chararr = str.ToCharArray();
-            for(int i=0; i<chararr.Length;i++)
+            //string str = "nEHA iS mY nAME ";
+            //char[] chararr = str.ToCharArray();
+            //for(int i=0; i<chararr.Length;i++)
+            //{
+            //    if (Convert.ToInt32(chararr[i]) >=65 && Convert.ToInt32(chararr[i]) <= 90)
+            //    {
+            //        chararr[i] = (char)(Convert.ToInt32(chararr[i]) + 32);
+            //    }
+            //    else if(Convert.ToInt32(chararr[i]) >= 97 && Convert.ToInt32(chararr[i]) <= 122)
+            //    {
+            //        chararr[i] = (char)(Convert.ToInt32(chararr[i]) - 32);
+            //    }
+            //}
+
+            //string newstr = new string(chararr);
+            //Console.WriteLine("String is : "+newstr);
+
+            //59.	Write a program in C# Sharp to search for the position of a substring within a string.
+
+            //60.	Write a C# Sharp program to check whether a character is an alphabet and not and if so, check for the case(upper or lower).
+            char ch;
+            Console.WriteLine("Enter the character :");
+            ch = Convert.ToChar(Console.ReadLine());
+            if(ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z')
             {
-                if (Convert.ToInt32(chararr[i]) >=65 && Convert.ToInt32(chararr[i]) <= 90)
+                Console.WriteLine("This character is an alphabet");
+                if(Convert.ToInt32(ch) >=65 && Convert.ToInt32(ch) <= 90)
                 {
-                    chararr[i] = (char)(Convert.ToInt32(chararr[i]) + 32);
+                    Console.WriteLine("This is a uppercase character");
                 }
-                else if(Convert.ToInt32(chararr[i]) >= 97 && Convert.ToInt32(chararr[i]) <= 122)
+                else
                 {
-                    chararr[i] = (char)(Convert.ToInt32(chararr[i]) - 32);
+                    Console.WriteLine("This is a lowercase character");
                 }
             }
-
-            string newstr = new string(chararr);
-            Console.WriteLine("String is : "+newstr);
+            else
+            {
+                Console.WriteLine("This character is not an alphabet");
+            }
         }
-        
+
     }
 }
