@@ -872,24 +872,63 @@ namespace ProblemSolution
             //}
 
             //64.Write a C# program to check number is positive, negative or zero.
-            int num;
-            Console.WriteLine("Enter number :");
-            num = Convert.ToInt32(Console.ReadLine());
-            if(num < 0)
-            {
-                Console.WriteLine("Number is negative");
-            }
-            else if(num > 0)
-            {
-                Console.WriteLine("Number is positive");
-            }
-            else
-            {
-                Console.WriteLine("Number is zero");
-            }
+            //int num;
+            //Console.WriteLine("Enter number :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //if(num < 0)
+            //{
+            //    Console.WriteLine("Number is negative");
+            //}
+            //else if(num > 0)
+            //{
+            //    Console.WriteLine("Number is positive");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number is zero");
+            //}
 
+            //65.Write a C# program to print day name of week.
 
+            int day;
+            do
+            {
+                Console.WriteLine("Enter day from 1-7 :");
+                day = Convert.ToInt32(Console.ReadLine());
 
+                switch (day)
+                {
+                    case 1:
+                        Console.WriteLine("This day is Monday");
+                        break;
+                    case 2:
+                        Console.WriteLine("This day is Tuesday");
+                        break;
+                    case 3:
+                        Console.WriteLine("This day is wednesday");
+                        break;
+                    case 4:
+                        Console.WriteLine("This day is thursday");
+                        break;
+                    case 5:
+                        Console.WriteLine("This day is friday");
+                        break;
+                    case 6:
+                        Console.WriteLine("This day is saturday");
+                        break;
+                    case 7:
+                        Console.WriteLine("This day is sunday");
+                        break;
+                    
+                    default:
+                        Console.WriteLine("You have entered incorrect day...please enter between 1 - 7");
+                        break;
+                    //case 10:
+                    //    Environment.Exit(0);
+                    //    break;
+                } 
+            
+            } while (day != 10);
         }
 
     }
