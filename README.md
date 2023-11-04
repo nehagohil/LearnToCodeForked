@@ -21,7 +21,7 @@
 | 17 | Write a C# program to create a string from a given string (length 1 or more) with the first character added at the front and back | Completed |
 | 18 | Write a C# program to check a pair of integers and return true if one is negative and one is positive | Completed |
 | 19 | Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum | Completed |
-| 20 | Write a C# program to get the absolute value of the difference between two given numbers. | Completed |
+| 20 | Write a C# program to get the absolute value of the difference between two given numbers | Completed |
 | 21 | Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20 | Completed |
 | 22 | Write a C# program to check if the given integer is within 20 of 100 or 200 | Completed |
 | 23 | Write a C# program to convert a given string into lowercase | Completed |
@@ -44,6 +44,7 @@
 | 40 | C# Program to Find the Largest Number using Conditional Operator | complete |
 | 41 | Write a program in C# Sharp to print individual characters of the string in reverse order | complete |
 | 42 | C# Program to Check whether an alphabet is a vowel or not | complete |
-| 43 | Write a program in C# Sharp to count the total number of words in a string. | complete |
+| 43 | Write a program in C# Sharp to count the total number of words in a string | complete |
+| 44 | C# program to check whether a triangle can be formed by the given value for the angles | complete |
 
 

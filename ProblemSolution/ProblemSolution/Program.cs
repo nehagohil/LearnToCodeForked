@@ -554,14 +554,33 @@ namespace ProblemSolution
 
             //45.	Write a program in C# Sharp to count the total number of words in a string.
 
-            string str = "My name is Neha and Shivam is my husband";
-            int count = 0;
-            string[] strarray = str.Split(" ");
-            foreach (var item in strarray)
+            //string str = "My name is Neha and Shivam is my husband";
+            //int count = 0;
+            //string[] strarray = str.Split(" ");
+            //foreach (var item in strarray)
+            //{
+            //    count++;
+            //}
+            //Console.WriteLine("Total number of words in string are :" +count);
+
+            //46.	C# program to check whether a triangle can be formed by the given value for the angles.
+            int angle1, angle2, angle3;
+            int triangleCanForm = 180;
+            Console.WriteLine("enter angle1 : ");
+            angle1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter angle2 : ");
+            angle2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter angle3 : ");
+            angle3 = Convert.ToInt32(Console.ReadLine());
+
+            if(angle1+angle2+angle3 ==triangleCanForm)
             {
-                count++;
+                Console.WriteLine("Yes, Traingle can be formed..");
             }
-            Console.WriteLine("Total number of words in string are :" +count);
+            else
+            {
+                Console.WriteLine("No, Triangle can't be formed..");
+            }
         }
 
     }
