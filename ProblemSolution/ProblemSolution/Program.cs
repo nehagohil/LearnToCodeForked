@@ -617,83 +617,41 @@ namespace ProblemSolution
 
             //48.C# program to count total number of notes in entered amount
 
-            int amount, note2000 = 0, note1000 = 0, note500 = 0, note200 = 0, note100 = 0, note50 = 0, note20 =0,note10=0,note5 =0,note2=0,note1 = 0;
-            Console.WriteLine("Enter the amount : ");
-            amount = Convert.ToInt32(Console.ReadLine());
-            while(amount >0)
+            //int amount=0;
+            //Console.WriteLine("Enter the amount : ");
+            //amount = Convert.ToInt32(Console.ReadLine());
+            //CountNumberOfNotes countNumberOfNotes = new CountNumberOfNotes();
+            //countNumberOfNotes.countnotes(amount);
+
+
+            //49.	Write a program in C# Sharp to count the number of alphabets, digits and special characters in a string
+            string str = "I love Shivam > 3";
+            int countalphabets = 0, countdigits = 0, countspecialchar = 0;
+            char[] strchararr = str.ToCharArray();
+            foreach (var item in strchararr)
             {
-                if (amount >= 2000)
+                if(item >= 'A' && item <='Z' || item >= 'a' && item <= 'z')
                 {
-                    note2000 = amount / 2000;
-                    amount = amount - note2000 * 2000;
+                    countalphabets += 1;
+                }
+                else if(item >= '0' && item <='9')
+                {
+                    countdigits += 1;
 
                 }
-                else if(amount >=1000)
+                else if(item == ' ')
                 {
-                    note1000 = amount / 1000;
-                    amount = amount - note1000 * 1000;
-                }
-                else if(amount >=500)
-                {
-                    note500 = amount / 500;
-                    amount = amount - note500 * 500;
-                }
-                else if (amount >= 200)
-                {
-                    note200 = amount / 200;
-                    amount = amount - note200 * 200;
-                }
-                else if (amount >= 100)
-                {
-                    note100 = amount / 100;
-                    amount = amount - note100 * 100;
-                }
-                else if (amount >= 50)
-                {
-                    note50 = amount / 50;
-                    amount = amount - note50 * 50;
-                }
-                else if (amount >= 20)
-                {
-                    note20 = amount / 20;
-                    amount = amount - note20 * 20;
-                }
-                else if (amount >= 10)
-                {
-                    note10 = amount / 10;
-                    amount = amount - note10 * 10;
-                }
-                else if (amount >= 5)
-                {
-                    note5 = amount / 5;
-                    amount = amount - note5 * 5;
-                }
-                else if (amount >= 2)
-                {
-                    note2 = amount / 2;
-                    amount = amount - note2 * 2;
+                    continue;
                 }
                 else
                 {
-                    note1 = amount / 1;
-                    amount = amount - note1 * 1;
+                    countspecialchar += 1;
                 }
 
             }
-
-            Console.WriteLine("Number of notes for the amount is below : ");
-            Console.WriteLine(" Notes of 2000 : "+note2000);
-            Console.WriteLine(" Notes of 1000 : "+note1000);
-            Console.WriteLine(" Notes of 500 : "+note500);
-            Console.WriteLine(" Notes of 200 : "+note200);
-            Console.WriteLine(" Notes of 100 : "+note100);
-            Console.WriteLine(" Notes of 50 : "+note50);
-            Console.WriteLine(" Notes of 20 : "+note20);
-            Console.WriteLine(" Notes of 10 : "+note10);
-            Console.WriteLine(" Notes of 5 : "+note5);
-            Console.WriteLine(" Notes of 2 : "+note2);
-            Console.WriteLine(" Notes of 1 : "+note1);
-
+            Console.WriteLine(" Count of alphaets in the string is :"+ countalphabets);
+            Console.WriteLine(" Count of digits in the string is :" + countdigits);
+            Console.WriteLine(" Count of special characteres in the string is :" + countspecialchar);
         }
 
     }

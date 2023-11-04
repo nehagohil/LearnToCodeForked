@@ -49,6 +49,7 @@
 | 45 | Write a program in C# Sharp to compare two strings without using a string library functions | complete |
 | 46 | Write a program in C# Sharp to compare two strings without using a string library functions | complete |
 | 47 | C# program to count total number of notes in entered amount | complete |
+| 48 | Write a program in C# Sharp to count the number of alphabets, digits and special characters in a string | complete |
 
 
 
