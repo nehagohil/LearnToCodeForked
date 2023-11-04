@@ -583,39 +583,116 @@ namespace ProblemSolution
             //}
 
             //47.	Write a program in C# Sharp to compare two strings without using a string library functions
-            string str1 = "Neha";
-            string str2 = "Shivam";
-            char[] str1chararr = str1.ToCharArray();
-            char[] str2chararr = str2.ToCharArray();
-            bool IsEqual = true;
-            if(str1chararr.Length == str2chararr.Length)
+            //string str1 = "Neha";
+            //string str2 = "Shivam";
+            //char[] str1chararr = str1.ToCharArray();
+            //char[] str2chararr = str2.ToCharArray();
+            //bool IsEqual = true;
+            //if(str1chararr.Length == str2chararr.Length)
+            //{
+            //    for (int i=0; i<str1chararr.Length; i++)
+            //    {
+
+            //            if (str1chararr[i] == str2chararr[i])
+            //            {
+            //                continue;
+            //            }
+            //            else
+            //            {
+            //                IsEqual = false;
+            //                Console.WriteLine("Strings are not equal...");
+            //                break;
+            //            }
+            //    }
+            //    if(IsEqual)
+            //    {
+            //        Console.WriteLine("Strings are equal..");
+            //    }
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Strings are not equal");
+            //}
+
+            //48.C# program to count total number of notes in entered amount
+
+            int amount, note2000 = 0, note1000 = 0, note500 = 0, note200 = 0, note100 = 0, note50 = 0, note20 =0,note10=0,note5 =0,note2=0,note1 = 0;
+            Console.WriteLine("Enter the amount : ");
+            amount = Convert.ToInt32(Console.ReadLine());
+            while(amount >0)
             {
-                for (int i=0; i<str1chararr.Length; i++)
+                if (amount >= 2000)
                 {
-                    
-                        if (str1chararr[i] == str2chararr[i])
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            IsEqual = false;
-                            Console.WriteLine("Strings are not equal...");
-                            break;
-                        }
+                    note2000 = amount / 2000;
+                    amount = amount - note2000 * 2000;
+
                 }
-                if(IsEqual)
+                else if(amount >=1000)
                 {
-                    Console.WriteLine("Strings are equal..");
+                    note1000 = amount / 1000;
+                    amount = amount - note1000 * 1000;
+                }
+                else if(amount >=500)
+                {
+                    note500 = amount / 500;
+                    amount = amount - note500 * 500;
+                }
+                else if (amount >= 200)
+                {
+                    note200 = amount / 200;
+                    amount = amount - note200 * 200;
+                }
+                else if (amount >= 100)
+                {
+                    note100 = amount / 100;
+                    amount = amount - note100 * 100;
+                }
+                else if (amount >= 50)
+                {
+                    note50 = amount / 50;
+                    amount = amount - note50 * 50;
+                }
+                else if (amount >= 20)
+                {
+                    note20 = amount / 20;
+                    amount = amount - note20 * 20;
+                }
+                else if (amount >= 10)
+                {
+                    note10 = amount / 10;
+                    amount = amount - note10 * 10;
+                }
+                else if (amount >= 5)
+                {
+                    note5 = amount / 5;
+                    amount = amount - note5 * 5;
+                }
+                else if (amount >= 2)
+                {
+                    note2 = amount / 2;
+                    amount = amount - note2 * 2;
+                }
+                else
+                {
+                    note1 = amount / 1;
+                    amount = amount - note1 * 1;
                 }
 
             }
-            else
-            {
-                Console.WriteLine("Strings are not equal");
-            }
 
-
+            Console.WriteLine("Number of notes for the amount is below : ");
+            Console.WriteLine(" Notes of 2000 : "+note2000);
+            Console.WriteLine(" Notes of 1000 : "+note1000);
+            Console.WriteLine(" Notes of 500 : "+note500);
+            Console.WriteLine(" Notes of 200 : "+note200);
+            Console.WriteLine(" Notes of 100 : "+note100);
+            Console.WriteLine(" Notes of 50 : "+note50);
+            Console.WriteLine(" Notes of 20 : "+note20);
+            Console.WriteLine(" Notes of 10 : "+note10);
+            Console.WriteLine(" Notes of 5 : "+note5);
+            Console.WriteLine(" Notes of 2 : "+note2);
+            Console.WriteLine(" Notes of 1 : "+note1);
 
         }
 
