@@ -1075,26 +1075,69 @@ namespace ProblemSolution
             //Eligibility Criteria : 
             //Marks in Maths >= 65 and Marks in Phy >= 55 and Marks in Chem >= 50 and Total in all three subject >= 190 or Total in Maths and Physics >= 140
 
-            int maths, physics, chemistry, totalmarks=0, totalmathschemistry =0;
-            Console.WriteLine("enter marks for maths :");
-            maths = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for physics :");
-            physics = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter marks for chemistry :");
-            chemistry = Convert.ToInt32(Console.ReadLine());
-            totalmarks = maths + physics + chemistry;
-            totalmathschemistry = maths + physics;
+            //int maths, physics, chemistry, totalmarks=0, totalmathschemistry =0;
+            //Console.WriteLine("enter marks for maths :");
+            //maths = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for physics :");
+            //physics = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter marks for chemistry :");
+            //chemistry = Convert.ToInt32(Console.ReadLine());
+            //totalmarks = maths + physics + chemistry;
+            //totalmathschemistry = maths + physics;
 
-            if(maths>=65 && physics>=55 && chemistry>=50)
+            //if(maths>=65 && physics>=55 && chemistry>=50)
+            //{
+            //    if(totalmarks >= 190 || totalmathschemistry>=140)
+            //    {
+            //        Console.WriteLine("You are eligible for an admission");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not eligible for an admission");
+            //}
+
+            //74.Write a program in C# to read any digit (0-9) and display it in the word using switch case.
+
+            int num;
+            Console.WriteLine("enter number between 0-9:");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            switch(num)
             {
-                if(totalmarks >= 190 || totalmathschemistry>=140)
-                {
-                    Console.WriteLine("You are eligible for an admission");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Not eligible for an admission");
+                case 0:
+                    Console.WriteLine("zero");
+                    break;
+                case 1:
+                    Console.WriteLine("one");
+                    break;
+                case 2:
+                    Console.WriteLine("Two");
+                    break;
+                case 3:
+                    Console.WriteLine("Three");
+                    break;
+                case 4:
+                    Console.WriteLine("Four");
+                    break;
+                case 5:
+                    Console.WriteLine("Five");
+                    break;
+                case 6:
+                    Console.WriteLine("Six");
+                    break;
+                case 7:
+                    Console.WriteLine("Seven");
+                    break;
+                case 8:
+                    Console.WriteLine("Eight");
+                    break;
+                case 9:
+                    Console.WriteLine("Nine");
+                    break;
+                default:
+                    Console.WriteLine("Please enter number between 0-9");
+                    break;
             }
         }
 
