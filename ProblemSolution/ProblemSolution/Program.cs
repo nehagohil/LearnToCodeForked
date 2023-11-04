@@ -625,33 +625,39 @@ namespace ProblemSolution
 
 
             //49.	Write a program in C# Sharp to count the number of alphabets, digits and special characters in a string
-            string str = "I love Shivam > 3";
-            int countalphabets = 0, countdigits = 0, countspecialchar = 0;
-            char[] strchararr = str.ToCharArray();
-            foreach (var item in strchararr)
+            //string str = "I love Shivam > 3";
+            //int countalphabets = 0, countdigits = 0, countspecialchar = 0;
+            //char[] strchararr = str.ToCharArray();
+            //foreach (var item in strchararr)
+            //{
+            //    if(item >= 'A' && item <='Z' || item >= 'a' && item <= 'z')
+            //    {
+            //        countalphabets += 1;
+            //    }
+            //    else if(item >= '0' && item <='9')
+            //    {
+            //        countdigits += 1;
+
+            //    }
+            //    else if(item == ' ')
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        countspecialchar += 1;
+            //    }
+
+            //}
+            //Console.WriteLine(" Count of alphaets in the string is :"+ countalphabets);
+            //Console.WriteLine(" Count of digits in the string is :" + countdigits);
+            //Console.WriteLine(" Count of special characteres in the string is :" + countspecialchar);
+
+            //50.	Write C# program to print alphabets from a to z.
+            for (char i ='a'; i<='z';i++)
             {
-                if(item >= 'A' && item <='Z' || item >= 'a' && item <= 'z')
-                {
-                    countalphabets += 1;
-                }
-                else if(item >= '0' && item <='9')
-                {
-                    countdigits += 1;
-
-                }
-                else if(item == ' ')
-                {
-                    continue;
-                }
-                else
-                {
-                    countspecialchar += 1;
-                }
-
+                Console.WriteLine(i);
             }
-            Console.WriteLine(" Count of alphaets in the string is :"+ countalphabets);
-            Console.WriteLine(" Count of digits in the string is :" + countdigits);
-            Console.WriteLine(" Count of special characteres in the string is :" + countspecialchar);
         }
 
     }
