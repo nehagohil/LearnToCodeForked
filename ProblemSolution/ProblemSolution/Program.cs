@@ -931,18 +931,32 @@ namespace ProblemSolution
             //} while (day != 10);
 
             //66.Write a C# program to accept two integers and check whether they are equal or not.
-            int num1, num2;
-            Console.WriteLine("Enter number 1: ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter number 2: ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            if(num1 == num2)
+            //int num1, num2;
+            //Console.WriteLine("Enter number 1: ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter number 2: ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+            //if(num1 == num2)
+            //{
+            //    Console.WriteLine("Numbers are equal");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Numbers are not equal");
+            //}
+
+            //67.Write a C# program to detrermine a candidate’s age is eligible for casting the vote or not.
+
+            int age;
+            Console.WriteLine("Enter age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            if(age >= 18)
             {
-                Console.WriteLine("Numbers are equal");
+                Console.WriteLine("This age is eligible for casting vote.");
             }
             else
             {
-                Console.WriteLine("Numbers are not equal");
+                Console.WriteLine("This age is not eligible for casting vote.");
             }
         }
 

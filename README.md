@@ -67,6 +67,7 @@
 | 63 | Write a C# program to check number is positive, negative or zero | complete |
 | 64 | Write a C# program to print day name of week | complete |
 | 65 | Write a C# program to accept two integers and check whether they are equal or not | complete |
+| 66 | Write a C# program to detrermine a candidate’s age is eligible for casting the vote or not | complete |
 
 
 
