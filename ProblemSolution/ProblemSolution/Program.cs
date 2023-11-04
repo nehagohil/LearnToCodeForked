@@ -808,37 +808,52 @@ namespace ProblemSolution
 
             //61.Write a program in C# Sharp to find the number of times a substring appears in a given string.
 
-            string str = "India is my country. It is very nice.";
-            string substring;
-            Console.WriteLine("Enter substring to check occurances :");
-            substring = Console.ReadLine();
-            int subscount = 0;
-            bool IsEqual = true;
-            char[] charstrarr = str.ToCharArray();
-            char[] charsubsarr = substring.ToCharArray();
-            for(int i=0; i< charstrarr.Length;i++)
-            {
-                for(int j=0; j< charsubsarr.Length;j++)
-                {
-                    if (charsubsarr[j] == charstrarr[i])
-                    {
-                        i++;
-                        IsEqual = true;
-                        continue;
-                    }
-                    else
-                    {
-                        IsEqual = false;
-                        break;
-                    }
-                }
-                if(IsEqual)
-                {
-                    subscount += 1;
-                }
-            }
+            //string str = "India is my country. It is very nice.";
+            //string substring;
+            //Console.WriteLine("Enter substring to check occurances :");
+            //substring = Console.ReadLine();
+            //int subscount = 0;
+            //bool IsEqual = true;
+            //char[] charstrarr = str.ToCharArray();
+            //char[] charsubsarr = substring.ToCharArray();
+            //for(int i=0; i< charstrarr.Length;i++)
+            //{
+            //    for(int j=0; j< charsubsarr.Length;j++)
+            //    {
+            //        if (charsubsarr[j] == charstrarr[i])
+            //        {
+            //            i++;
+            //            IsEqual = true;
+            //            continue;
+            //        }
+            //        else
+            //        {
+            //            IsEqual = false;
+            //            break;
+            //        }
+            //    }
+            //    if(IsEqual)
+            //    {
+            //        subscount += 1;
+            //    }
+            //}
 
-            Console.WriteLine("Number of times substring occured is :"+subscount);
+            //Console.WriteLine("Number of times substring occured is :"+subscount);
+
+            //62.Write a C# Program to check whether an integer entered by the user is odd or even
+
+            int num;
+            Console.WriteLine("Enter number :");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if(num % 2 == 0)
+            {
+                Console.WriteLine("Number is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
         }
 
     }
