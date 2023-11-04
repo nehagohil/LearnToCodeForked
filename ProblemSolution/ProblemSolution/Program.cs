@@ -526,31 +526,42 @@ namespace ProblemSolution
             //}
 
             //44.C# Program to Check whether an alphabet is a vowel or not
-            char ch;
-            Console.WriteLine("Enter the character : ");
-            ch = Convert.ToChar(Console.ReadLine().ToLower());
-            Console.WriteLine(ch);
-            switch(ch)
+            //char ch;
+            //Console.WriteLine("Enter the character : ");
+            //ch = Convert.ToChar(Console.ReadLine().ToLower());
+            //Console.WriteLine(ch);
+            //switch(ch)
+            //{
+            //    case 'a':
+            //        Console.WriteLine("This is a vowel");
+            //        break;
+            //    case 'e':
+            //        Console.WriteLine("This is a vowel");
+            //        break;
+            //    case 'i':
+            //        Console.WriteLine("This is a vowel");
+            //        break;
+            //    case 'o':
+            //        Console.WriteLine("This is a vowel");
+            //        break;
+            //    case 'u':
+            //        Console.WriteLine("This is a vowel");
+            //        break;
+            //    default:
+            //        Console.WriteLine("This is not a vowel");
+            //        break;
+            //}
+
+            //45.	Write a program in C# Sharp to count the total number of words in a string.
+
+            string str = "My name is Neha and Shivam is my husband";
+            int count = 0;
+            string[] strarray = str.Split(" ");
+            foreach (var item in strarray)
             {
-                case 'a':
-                    Console.WriteLine("This is a vowel");
-                    break;
-                case 'e':
-                    Console.WriteLine("This is a vowel");
-                    break;
-                case 'i':
-                    Console.WriteLine("This is a vowel");
-                    break;
-                case 'o':
-                    Console.WriteLine("This is a vowel");
-                    break;
-                case 'u':
-                    Console.WriteLine("This is a vowel");
-                    break;
-                default:
-                    Console.WriteLine("This is not a vowel");
-                    break;
+                count++;
             }
+            Console.WriteLine("Total number of words in string are :" +count);
         }
 
     }
