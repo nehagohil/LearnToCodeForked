@@ -1141,51 +1141,65 @@ namespace ProblemSolution
             //}
 
             //75.Write a C# program which computes the area of various geometrical shapes using a menu-driven approach
-            char ch;
-            do
+            //char ch;
+            //do
+            //{
+            //    Console.WriteLine("*************** Welcome to area of various geometrical shapes **************");
+            //    Console.WriteLine("1. square");
+            //    Console.WriteLine("2. rectangle");
+            //    Console.WriteLine("3. circle");
+            //    Console.WriteLine("0.EXIT");
+            //    Console.WriteLine("Please enter your choice");
+            //    ch = Convert.ToChar(Console.ReadLine());
+            //    switch (ch)
+            //    {
+            //        case '1':
+            //            int squareside;
+            //            Console.WriteLine("Enter side of the square to get the area");
+            //            squareside = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes = new AreaOfShapes();
+            //            int areaofsquare = areaOfShapes.getAreaOfSquare(squareside);
+            //            Console.WriteLine("area of square is :"+areaofsquare);
+            //            break;
+            //        case '2':
+            //            int length, width;
+            //            Console.WriteLine("Enter length of the rectangle");
+            //            length = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine("Enter width of the rectangle");
+            //            width = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes1 = new AreaOfShapes();
+            //            int areaofrectangle = areaOfShapes1.getAreaOfRectangle(length,width);
+            //            Console.WriteLine("area of square is :" + areaofrectangle);
+            //            break;
+            //        case '3':
+            //            int radius;
+            //            Console.WriteLine("Enter radius of a circle");
+            //            radius = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes2 = new AreaOfShapes();
+            //            double areaofcircle = areaOfShapes2.getAreaOfCircle(radius);
+            //            Console.WriteLine("area of circle is :"+ areaofcircle);
+            //            break;
+            //        case '0':
+            //            Environment.Exit(0);
+            //            break;
+            //    }
+
+
+            //} while (ch != 'y');
+
+            //76.Write a C# Program to print Fibonacci Series
+
+            int num1 = 1, num2 = 1, sum = 0;
+            Console.WriteLine("Fibonnacci series is :");
+            Console.WriteLine(num1);
+            Console.WriteLine(num2);
+            while(sum <=20)
             {
-                Console.WriteLine("*************** Welcome to area of various geometrical shapes **************");
-                Console.WriteLine("1. square");
-                Console.WriteLine("2. rectangle");
-                Console.WriteLine("3. circle");
-                Console.WriteLine("0.EXIT");
-                Console.WriteLine("Please enter your choice");
-                ch = Convert.ToChar(Console.ReadLine());
-                switch (ch)
-                {
-                    case '1':
-                        int squareside;
-                        Console.WriteLine("Enter side of the square to get the area");
-                        squareside = Convert.ToInt32(Console.ReadLine());
-                        AreaOfShapes areaOfShapes = new AreaOfShapes();
-                        int areaofsquare = areaOfShapes.getAreaOfSquare(squareside);
-                        Console.WriteLine("area of square is :"+areaofsquare);
-                        break;
-                    case '2':
-                        int length, width;
-                        Console.WriteLine("Enter length of the rectangle");
-                        length = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter width of the rectangle");
-                        width = Convert.ToInt32(Console.ReadLine());
-                        AreaOfShapes areaOfShapes1 = new AreaOfShapes();
-                        int areaofrectangle = areaOfShapes1.getAreaOfRectangle(length,width);
-                        Console.WriteLine("area of square is :" + areaofrectangle);
-                        break;
-                    case '3':
-                        int radius;
-                        Console.WriteLine("Enter radius of a circle");
-                        radius = Convert.ToInt32(Console.ReadLine());
-                        AreaOfShapes areaOfShapes2 = new AreaOfShapes();
-                        double areaofcircle = areaOfShapes2.getAreaOfCircle(radius);
-                        Console.WriteLine("area of circle is :"+ areaofcircle);
-                        break;
-                    case '0':
-                        Environment.Exit(0);
-                        break;
-                }
-
-
-            } while (ch != 'y');
+                sum = num1 + num2;
+                Console.WriteLine(sum);
+                num1 = num2;
+                num2 = sum;
+            }
             
         }
 
