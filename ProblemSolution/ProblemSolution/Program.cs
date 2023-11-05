@@ -1203,20 +1203,35 @@ namespace ProblemSolution
 
             //77.Write a C# Program to Find First N Fibonacci Numbers
 
-            int limit, count =0, num1=1,num2=1,sum=0;
-            Console.WriteLine("Enter how many numbers you want to see in the fibonacci series.");
-            limit = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(num1);
-            Console.WriteLine(num2);
-            count = 2;
-            while(count < limit)
+            //int limit, count =0, num1=1,num2=1,sum=0;
+            //Console.WriteLine("Enter how many numbers you want to see in the fibonacci series.");
+            //limit = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+            //count = 2;
+            //while(count < limit)
+            //{
+            //    sum = num1 + num2;
+            //    Console.WriteLine(sum);
+            //    count++;
+            //    num1 = num2;
+            //    num2 = sum;
+            //}
+
+            //78.Write a C# Program to Find Nth Fibonacci Number using Recursion
+
+            //79.Write a C# Program to Find the Factorial of a Number
+            int num;
+            Console.WriteLine("enter the number to get the factoral :");
+            num = Convert.ToInt32(Console.ReadLine());
+            int fact = 1;
+            while(num >0)
             {
-                sum = num1 + num2;
-                Console.WriteLine(sum);
-                count++;
-                num1 = num2;
-                num2 = sum;
+                fact = fact * num;
+                num--;
             }
+
+            Console.WriteLine("the factorial of a number is :"+fact);
         }
 
     }

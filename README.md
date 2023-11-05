@@ -77,6 +77,8 @@
 | 73 | Write a C# program which computes the area of various geometrical shapes using a menu-driven approach  | complete |
 | 74 | Write a C# Program to print Fibonacci Series  | complete |
 | 75 | Write a C# Program to Find First N Fibonacci Numbers  | complete |
+| 76 | Write a C# Program to Find Nth Fibonacci Number using Recursion  | Incomplete |
+| 77 | Write a C# Program to Find the Factorial of a Number  | complete |
 
 
 
