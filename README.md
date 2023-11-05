@@ -74,6 +74,7 @@
 | 70 | Write a C# program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies | complete |
 | 71 | Write a C# program to determine eligibility for admission to a professional course  | complete |
 | 72 | Write a program in C# to read any digit (0-9) and display it in the word using switch case.  | complete |
+| 73 | Write a program in C# to read any digit (0-9) and display it in the word using switch case.  | complete |
 
 
 
