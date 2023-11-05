@@ -1221,17 +1221,26 @@ namespace ProblemSolution
             //78.Write a C# Program to Find Nth Fibonacci Number using Recursion
 
             //79.Write a C# Program to Find the Factorial of a Number
+            //int num;
+            //Console.WriteLine("enter the number to get the factoral :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //int fact = 1;
+            //while(num >0)
+            //{
+            //    fact = fact * num;
+            //    num--;
+            //}
+
+            //Console.WriteLine("the factorial of a number is :"+fact);
+
+            //80.Write a C# Program to Find the Factorial of a Number using Recursion
             int num;
             Console.WriteLine("enter the number to get the factoral :");
             num = Convert.ToInt32(Console.ReadLine());
-            int fact = 1;
-            while(num >0)
-            {
-                fact = fact * num;
-                num--;
-            }
-
-            Console.WriteLine("the factorial of a number is :"+fact);
+            FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
+            int fact =factorialUsingRecursion.factorial(num);
+            Console.WriteLine("Factorail using recursion is :"+fact);
+         
         }
 
     }

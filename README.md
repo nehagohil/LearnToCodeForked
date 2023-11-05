@@ -79,6 +79,7 @@
 | 75 | Write a C# Program to Find First N Fibonacci Numbers  | complete |
 | 76 | Write a C# Program to Find Nth Fibonacci Number using Recursion  | Incomplete |
 | 77 | Write a C# Program to Find the Factorial of a Number  | complete |
+| 78 | Write a C# Program to Find the Factorial of a Number using Recursion  | complete |
 
 
 
