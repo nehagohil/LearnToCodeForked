@@ -1189,18 +1189,34 @@ namespace ProblemSolution
 
             //76.Write a C# Program to print Fibonacci Series
 
-            int num1 = 1, num2 = 1, sum = 0;
-            Console.WriteLine("Fibonnacci series is :");
+            //int num1 = 1, num2 = 1, sum = 0;
+            //Console.WriteLine("Fibonnacci series is :");
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+            //while(sum <=20)
+            //{
+            //    sum = num1 + num2;
+            //    Console.WriteLine(sum);
+            //    num1 = num2;
+            //    num2 = sum;
+            //}
+
+            //77.Write a C# Program to Find First N Fibonacci Numbers
+
+            int limit, count =0, num1=1,num2=1,sum=0;
+            Console.WriteLine("Enter how many numbers you want to see in the fibonacci series.");
+            limit = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(num1);
             Console.WriteLine(num2);
-            while(sum <=20)
+            count = 2;
+            while(count < limit)
             {
                 sum = num1 + num2;
                 Console.WriteLine(sum);
+                count++;
                 num1 = num2;
                 num2 = sum;
             }
-            
         }
 
     }
