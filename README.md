@@ -73,8 +73,13 @@
 | 69 | Write a C# program to enter month number and print number of days in month using switch case | complete |
 | 70 | Write a C# program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies | complete |
 | 71 | Write a C# program to determine eligibility for admission to a professional course  | complete |
-| 72 | Write a program in C# to read any digit (0-9) and display it in the word using switch case.  | complete |
-| 73 | Write a program in C# to read any digit (0-9) and display it in the word using switch case.  | complete |
+| 72 | Write a program in C# to read any digit (0-9) and display it in the word using switch case  | complete |
+| 73 | Write a C# program which computes the area of various geometrical shapes using a menu-driven approach  | complete |
+| 74 | Write a C# Program to print Fibonacci Series  | complete |
+| 75 | Write a C# Program to Find First N Fibonacci Numbers  | complete |
+| 76 | Write a C# Program to Find Nth Fibonacci Number using Recursion  | Incomplete |
+| 77 | Write a C# Program to Find the Factorial of a Number  | complete |
+| 78 | Write a C# Program to Find the Factorial of a Number using Recursion  | complete |
 
 
 

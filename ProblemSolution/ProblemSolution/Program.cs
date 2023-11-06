@@ -1099,46 +1099,148 @@ namespace ProblemSolution
 
             //74.Write a program in C# to read any digit (0-9) and display it in the word using switch case.
 
-            int num;
-            Console.WriteLine("enter number between 0-9:");
-            num = Convert.ToInt32(Console.ReadLine());
+            //int num;
+            //Console.WriteLine("enter number between 0-9:");
+            //num = Convert.ToInt32(Console.ReadLine());
 
-            switch(num)
-            {
-                case 0:
-                    Console.WriteLine("zero");
-                    break;
-                case 1:
-                    Console.WriteLine("one");
-                    break;
-                case 2:
-                    Console.WriteLine("Two");
-                    break;
-                case 3:
-                    Console.WriteLine("Three");
-                    break;
-                case 4:
-                    Console.WriteLine("Four");
-                    break;
-                case 5:
-                    Console.WriteLine("Five");
-                    break;
-                case 6:
-                    Console.WriteLine("Six");
-                    break;
-                case 7:
-                    Console.WriteLine("Seven");
-                    break;
-                case 8:
-                    Console.WriteLine("Eight");
-                    break;
-                case 9:
-                    Console.WriteLine("Nine");
-                    break;
-                default:
-                    Console.WriteLine("Please enter number between 0-9");
-                    break;
-            }
+            //switch(num)
+            //{
+            //    case 0:
+            //        Console.WriteLine("zero");
+            //        break;
+            //    case 1:
+            //        Console.WriteLine("one");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Two");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Three");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Four");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Five");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine("Six");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine("Seven");
+            //        break;
+            //    case 8:
+            //        Console.WriteLine("Eight");
+            //        break;
+            //    case 9:
+            //        Console.WriteLine("Nine");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Please enter number between 0-9");
+            //        break;
+            //}
+
+            //75.Write a C# program which computes the area of various geometrical shapes using a menu-driven approach
+            //char ch;
+            //do
+            //{
+            //    Console.WriteLine("*************** Welcome to area of various geometrical shapes **************");
+            //    Console.WriteLine("1. square");
+            //    Console.WriteLine("2. rectangle");
+            //    Console.WriteLine("3. circle");
+            //    Console.WriteLine("0.EXIT");
+            //    Console.WriteLine("Please enter your choice");
+            //    ch = Convert.ToChar(Console.ReadLine());
+            //    switch (ch)
+            //    {
+            //        case '1':
+            //            int squareside;
+            //            Console.WriteLine("Enter side of the square to get the area");
+            //            squareside = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes = new AreaOfShapes();
+            //            int areaofsquare = areaOfShapes.getAreaOfSquare(squareside);
+            //            Console.WriteLine("area of square is :"+areaofsquare);
+            //            break;
+            //        case '2':
+            //            int length, width;
+            //            Console.WriteLine("Enter length of the rectangle");
+            //            length = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine("Enter width of the rectangle");
+            //            width = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes1 = new AreaOfShapes();
+            //            int areaofrectangle = areaOfShapes1.getAreaOfRectangle(length,width);
+            //            Console.WriteLine("area of square is :" + areaofrectangle);
+            //            break;
+            //        case '3':
+            //            int radius;
+            //            Console.WriteLine("Enter radius of a circle");
+            //            radius = Convert.ToInt32(Console.ReadLine());
+            //            AreaOfShapes areaOfShapes2 = new AreaOfShapes();
+            //            double areaofcircle = areaOfShapes2.getAreaOfCircle(radius);
+            //            Console.WriteLine("area of circle is :"+ areaofcircle);
+            //            break;
+            //        case '0':
+            //            Environment.Exit(0);
+            //            break;
+            //    }
+
+
+            //} while (ch != 'y');
+
+            //76.Write a C# Program to print Fibonacci Series
+
+            //int num1 = 1, num2 = 1, sum = 0;
+            //Console.WriteLine("Fibonnacci series is :");
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+            //while(sum <=20)
+            //{
+            //    sum = num1 + num2;
+            //    Console.WriteLine(sum);
+            //    num1 = num2;
+            //    num2 = sum;
+            //}
+
+            //77.Write a C# Program to Find First N Fibonacci Numbers
+
+            //int limit, count =0, num1=1,num2=1,sum=0;
+            //Console.WriteLine("Enter how many numbers you want to see in the fibonacci series.");
+            //limit = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+            //count = 2;
+            //while(count < limit)
+            //{
+            //    sum = num1 + num2;
+            //    Console.WriteLine(sum);
+            //    count++;
+            //    num1 = num2;
+            //    num2 = sum;
+            //}
+
+            //78.Write a C# Program to Find Nth Fibonacci Number using Recursion
+
+            //79.Write a C# Program to Find the Factorial of a Number
+            //int num;
+            //Console.WriteLine("enter the number to get the factoral :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //int fact = 1;
+            //while(num >0)
+            //{
+            //    fact = fact * num;
+            //    num--;
+            //}
+
+            //Console.WriteLine("the factorial of a number is :"+fact);
+
+            //80.Write a C# Program to Find the Factorial of a Number using Recursion
+            int num;
+            Console.WriteLine("enter the number to get the factoral :");
+            num = Convert.ToInt32(Console.ReadLine());
+            FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
+            int fact =factorialUsingRecursion.factorial(num);
+            Console.WriteLine("Factorail using recursion is :"+fact);
+         
         }
 
     }
