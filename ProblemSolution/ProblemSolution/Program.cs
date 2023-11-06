@@ -1242,24 +1242,54 @@ namespace ProblemSolution
             //Console.WriteLine("Factorail using recursion is :"+fact);
 
             //81.Write a C# Program to Check Whether a Given Number is Perfect Number
-            int num; int sum = 0;
-            Console.WriteLine("enter the number to check whether it is a perfect number or not :");
+            //int num; int sum = 0;
+            //Console.WriteLine("enter the number to check whether it is a perfect number or not :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //for (int i=1; i<= num/2;i++)
+            //{
+            //    if (num % i ==0)
+            //    {
+            //        sum += i;
+            //    }
+            //}
+            //if (sum == num)
+            //{
+            //    Console.WriteLine("sum is :"+sum);
+            //    Console.WriteLine("This is a perfect number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This is not a perfect number");
+            //}
+
+            //82.Write a C# Program to Check Armstrong Number
+
+            int num,count =0 , sum=0, rem;
+            Console.WriteLine("Enter number to check whether it is a armstrong :");
             num = Convert.ToInt32(Console.ReadLine());
-            for (int i=1; i<= num/2;i++)
+            int getnum= num;
+            int checknum = num;
+
+            while(getnum >0)
             {
-                if (num % i ==0)
-                {
-                    sum += i;
-                }
+                int getnumrem = getnum % 10;
+                count += 1;
+                getnum = getnum / 10;
             }
-            if (sum == num)
+            while(num >0)
             {
-                Console.WriteLine("sum is :"+sum);
-                Console.WriteLine("This is a perfect number");
+                rem = num % 10;
+                sum += (int)Math.Pow(rem, count);
+                num = num / 10;
+            }
+
+            if (sum == checknum)
+            {
+                Console.WriteLine("This is a armstrong number.");
             }
             else
             {
-                Console.WriteLine("This is not a perfect number");
+                Console.WriteLine("This is not a armstrong number.");
             }
 
         }
