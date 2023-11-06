@@ -1234,13 +1234,34 @@ namespace ProblemSolution
             //Console.WriteLine("the factorial of a number is :"+fact);
 
             //80.Write a C# Program to Find the Factorial of a Number using Recursion
-            int num;
-            Console.WriteLine("enter the number to get the factoral :");
+            //int num;
+            //Console.WriteLine("enter the number to get the factoral :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
+            //int fact =factorialUsingRecursion.factorial(num);
+            //Console.WriteLine("Factorail using recursion is :"+fact);
+
+            //81.Write a C# Program to Check Whether a Given Number is Perfect Number
+            int num; int sum = 0;
+            Console.WriteLine("enter the number to check whether it is a perfect number or not :");
             num = Convert.ToInt32(Console.ReadLine());
-            FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
-            int fact =factorialUsingRecursion.factorial(num);
-            Console.WriteLine("Factorail using recursion is :"+fact);
-         
+            for (int i=1; i<= num/2;i++)
+            {
+                if (num % i ==0)
+                {
+                    sum += i;
+                }
+            }
+            if (sum == num)
+            {
+                Console.WriteLine("sum is :"+sum);
+                Console.WriteLine("This is a perfect number");
+            }
+            else
+            {
+                Console.WriteLine("This is not a perfect number");
+            }
+
         }
 
     }
