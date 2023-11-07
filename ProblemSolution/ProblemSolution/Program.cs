@@ -1234,13 +1234,132 @@ namespace ProblemSolution
             //Console.WriteLine("the factorial of a number is :"+fact);
 
             //80.Write a C# Program to Find the Factorial of a Number using Recursion
-            int num;
-            Console.WriteLine("enter the number to get the factoral :");
-            num = Convert.ToInt32(Console.ReadLine());
-            FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
-            int fact =factorialUsingRecursion.factorial(num);
-            Console.WriteLine("Factorail using recursion is :"+fact);
-         
+            //int num;
+            //Console.WriteLine("enter the number to get the factoral :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
+            //int fact =factorialUsingRecursion.factorial(num);
+            //Console.WriteLine("Factorail using recursion is :"+fact);
+
+            //81.Write a C# Program to Check Whether a Given Number is Perfect Number
+            //int num; int sum = 0;
+            //Console.WriteLine("enter the number to check whether it is a perfect number or not :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //for (int i=1; i<= num/2;i++)
+            //{
+            //    if (num % i ==0)
+            //    {
+            //        sum += i;
+            //    }
+            //}
+            //if (sum == num)
+            //{
+            //    Console.WriteLine("sum is :"+sum);
+            //    Console.WriteLine("This is a perfect number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This is not a perfect number");
+            //}
+
+            //82.Write a C# Program to Check Armstrong Number
+
+            //int num,count =0 , sum=0, rem;
+            //Console.WriteLine("Enter number to check whether it is a armstrong :");
+            //num = Convert.ToInt32(Console.ReadLine());
+            //int getnum= num;
+            //int checknum = num;
+
+            //while(getnum >0)
+            //{
+            //    int getnumrem = getnum % 10;
+            //    count += 1;
+            //    getnum = getnum / 10;
+            //}
+            //while(num >0)
+            //{
+            //    rem = num % 10;
+            //    sum += (int)Math.Pow(rem, count);
+            //    num = num / 10;
+            //}
+
+            //if (sum == checknum)
+            //{
+            //    Console.WriteLine("This is a armstrong number.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This is not a armstrong number.");
+            //}
+
+            //83.Write a C# Program to Display Armstrong Number between Two Intervals
+
+            //int startlimit, endlimit, rem;
+            //Console.WriteLine("enter startlimit :");
+            //startlimit = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter startlimit :");
+            //endlimit = Convert.ToInt32(Console.ReadLine());
+            //for (int i = startlimit; i<=endlimit; i++)
+            //{
+            //    int calc = i;
+            //    int getnum = i;
+            //    int checknum = i;
+            //    int count = 0;
+            //    int sum = 0;
+            //    while (getnum > 0)
+            //    {
+            //        int getnumrem = getnum % 10;
+            //        count += 1;
+            //        getnum = getnum / 10;
+            //    }
+            //    while (calc > 0)
+            //    {
+            //        rem = calc % 10;
+            //        sum += (int)Math.Pow(rem, count);
+            //        calc = calc / 10;
+            //    }
+            //    if(sum == checknum)
+            //    {
+            //        Console.WriteLine(checknum);
+            //    }
+            //}
+
+            //84.Write a C# Program to Find Nth Armstrong Number when max armstrong number should be 31
+
+            int position,rem;
+            Console.WriteLine("Enter value of n to get the armstrong number :");
+            position = Convert.ToInt32(Console.ReadLine());
+            int countnumber = 0;
+
+            for(int i =1; i <= 10000000;i++)
+            {
+                int calc = i;
+                int getnum = i;
+                int checknum = i;
+                int count = 0;
+                int sum = 0;
+                while (getnum > 0)
+                {
+                    int getnumrem = getnum % 10;
+                    count += 1;
+                    getnum = getnum / 10;
+                }
+                while (calc > 0)
+                {
+                    rem = calc % 10;
+                    sum += (int)Math.Pow(rem, count);
+                    calc = calc / 10;
+                }
+                if(sum == checknum)
+                {
+                    countnumber++;
+                    if(countnumber == position)
+                    {
+                        Console.WriteLine("Armstrong number on" +position+"th position is :" +checknum);
+                    }
+                }
+
+            }
         }
 
     }
