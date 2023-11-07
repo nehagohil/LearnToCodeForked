@@ -1294,12 +1294,44 @@ namespace ProblemSolution
 
             //83.Write a C# Program to Display Armstrong Number between Two Intervals
 
-            int startlimit, endlimit, rem;
-            Console.WriteLine("enter startlimit :");
-            startlimit = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter startlimit :");
-            endlimit = Convert.ToInt32(Console.ReadLine());
-            for (int i = startlimit; i<=endlimit; i++)
+            //int startlimit, endlimit, rem;
+            //Console.WriteLine("enter startlimit :");
+            //startlimit = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter startlimit :");
+            //endlimit = Convert.ToInt32(Console.ReadLine());
+            //for (int i = startlimit; i<=endlimit; i++)
+            //{
+            //    int calc = i;
+            //    int getnum = i;
+            //    int checknum = i;
+            //    int count = 0;
+            //    int sum = 0;
+            //    while (getnum > 0)
+            //    {
+            //        int getnumrem = getnum % 10;
+            //        count += 1;
+            //        getnum = getnum / 10;
+            //    }
+            //    while (calc > 0)
+            //    {
+            //        rem = calc % 10;
+            //        sum += (int)Math.Pow(rem, count);
+            //        calc = calc / 10;
+            //    }
+            //    if(sum == checknum)
+            //    {
+            //        Console.WriteLine(checknum);
+            //    }
+            //}
+
+            //84.Write a C# Program to Find Nth Armstrong Number when max armstrong number should be 31
+
+            int position,rem;
+            Console.WriteLine("Enter value of n to get the armstrong number :");
+            position = Convert.ToInt32(Console.ReadLine());
+            int countnumber = 0;
+
+            for(int i =1; i <= 10000000;i++)
             {
                 int calc = i;
                 int getnum = i;
@@ -1320,8 +1352,13 @@ namespace ProblemSolution
                 }
                 if(sum == checknum)
                 {
-                    Console.WriteLine(checknum);
+                    countnumber++;
+                    if(countnumber == position)
+                    {
+                        Console.WriteLine("Armstrong number on" +position+"th position is :" +checknum);
+                    }
                 }
+
             }
         }
 
