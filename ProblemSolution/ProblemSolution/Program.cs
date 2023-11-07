@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Security.Cryptography.X509Certificates;
@@ -1238,8 +1239,8 @@ namespace ProblemSolution
             //Console.WriteLine("enter the number to get the factoral :");
             //num = Convert.ToInt32(Console.ReadLine());
             //FactorialUsingRecursion factorialUsingRecursion = new FactorialUsingRecursion();
-            //int fact =factorialUsingRecursion.factorial(num);
-            //Console.WriteLine("Factorail using recursion is :"+fact);
+            //int fact = factorialUsingRecursion.factorial(num);
+            //Console.WriteLine("Factorail using recursion is :" + fact);
 
             //81.Write a C# Program to Check Whether a Given Number is Perfect Number
             //int num; int sum = 0;
@@ -1326,40 +1327,76 @@ namespace ProblemSolution
 
             //84.Write a C# Program to Find Nth Armstrong Number when max armstrong number should be 31
 
-            int position,rem;
-            Console.WriteLine("Enter value of n to get the armstrong number :");
-            position = Convert.ToInt32(Console.ReadLine());
-            int countnumber = 0;
+            //int position,rem;
+            //Console.WriteLine("Enter value of n to get the armstrong number :");
+            //position = Convert.ToInt32(Console.ReadLine());
+            //int countnumber = 0;
 
-            for(int i =1; i <= 10000000;i++)
+            //for(int i =1; i <= 10000000;i++)
+            //{
+            //    int calc = i;
+            //    int getnum = i;
+            //    int checknum = i;
+            //    int count = 0;
+            //    int sum = 0;
+            //    while (getnum > 0)
+            //    {
+            //        int getnumrem = getnum % 10;
+            //        count += 1;
+            //        getnum = getnum / 10;
+            //    }
+            //    while (calc > 0)
+            //    {
+            //        rem = calc % 10;
+            //        sum += (int)Math.Pow(rem, count);
+            //        calc = calc / 10;
+            //    }
+            //    if(sum == checknum)
+            //    {
+            //        countnumber++;
+            //        if(countnumber == position)
+            //        {
+            //            Console.WriteLine("Armstrong number on" +position+"th position is :" +checknum);
+            //        }
+            //    }
+
+            //}
+
+            //85.Write a C# Strong Number Program in C using While Loop
+            //Strong number is a special number whose sum of the factorial of digits is equal to the original number.For Example: 145 is strong number. Since, 1! + 4! + 5!
+
+            int num;
+            Console.WriteLine("Enter limit upto which you want to get the list of strong number :");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= num; i++)
             {
-                int calc = i;
-                int getnum = i;
+                int sumreplica=0;
                 int checknum = i;
-                int count = 0;
+                int checkstrong = i;
+                int rem;
                 int sum = 0;
-                while (getnum > 0)
+                while (checkstrong > 0)
                 {
-                    int getnumrem = getnum % 10;
-                    count += 1;
-                    getnum = getnum / 10;
-                }
-                while (calc > 0)
-                {
-                    rem = calc % 10;
-                    sum += (int)Math.Pow(rem, count);
-                    calc = calc / 10;
-                }
-                if(sum == checknum)
-                {
-                    countnumber++;
-                    if(countnumber == position)
+                    
+                    int fact = 1;
+                    rem = checkstrong % 10;
+                    while(rem > 0)
                     {
-                        Console.WriteLine("Armstrong number on" +position+"th position is :" +checknum);
+                        fact = fact * rem;
+                        rem--;
                     }
+                    sum += fact;
+                    checkstrong = checkstrong / 10;
+                   
                 }
 
+                if (sum == i)
+                {
+                    Console.WriteLine("The strong number is :" + i);
+                }
             }
+
         }
 
     }

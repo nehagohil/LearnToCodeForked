@@ -84,6 +84,7 @@
 | 80 | Write a C# Program to Check Armstrong Number  | complete |
 | 81 | Write a C# Program to Display Armstrong Number between Two Intervals  | complete |
 | 82 | Write a C# Program to Find Nth Armstrong Number  | complete |
+| 83 | Write a C# Strong Number Program in C using While Loop  | complete |
 
 
 
