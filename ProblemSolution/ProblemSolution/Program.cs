@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ProblemSolution
@@ -1399,17 +1400,36 @@ namespace ProblemSolution
 
             // 86.	Write a C# Program to Find the Minimum Range of Data Types
 
-            Console.WriteLine("Min size of int is :" + int.MinValue);
-            Console.WriteLine("Min size of float is :"+float.MinValue);
-            Console.WriteLine("Min size of int is :" + double.MinValue);
-            Console.WriteLine("Min size of float is :" + char.MinValue);
+            //Console.WriteLine("Min size of int is :" + int.MinValue);
+            //Console.WriteLine("Min size of float is :"+float.MinValue);
+            //Console.WriteLine("Min size of int is :" + double.MinValue);
+            //Console.WriteLine("Min size of float is :" + char.MinValue);
 
             // 87.	Write a C# Program to Find the Maximun Range of Data Types
 
-            Console.WriteLine("Min size of int is :" + int.MaxValue);
-            Console.WriteLine("Min size of float is :" + float.MaxValue);
-            Console.WriteLine("Min size of int is :" + double.MaxValue);
-            Console.WriteLine("Min size of float is :" + char.MaxValue);
+            //Console.WriteLine("Min size of int is :" + int.MaxValue);
+            //Console.WriteLine("Min size of float is :" + float.MaxValue);
+            //Console.WriteLine("Min size of int is :" + double.MaxValue);
+            //Console.WriteLine("Min size of float is :" + char.MaxValue);
+
+            //88. Write a C# Program to Demonstrate Boxing Operations
+
+            //int i = 123;
+            //Object o = i;
+
+            //i = 456;
+            //Console.WriteLine("value of value type :"+i);
+            //Console.WriteLine("value of reference type :" + o);
+
+            //89. Write a C# Program to Demonstrate UnBoxing Operations
+
+            int n = 123;
+            Object o = n;
+            int p = (int)o;
+
+            Console.WriteLine("Value after unboxing :"+p);
+
+
         }
 
     }
