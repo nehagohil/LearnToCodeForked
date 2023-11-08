@@ -1457,23 +1457,45 @@ namespace ProblemSolution
 
             //94.Write a C# Program to Convert Characters of a String to Opposite Case. A-Z is 65-90 a-z is 97-122
 
-            string str = "Neha";
-            char[] strarr = str.ToCharArray();
+            //string str = "Neha";
+            //char[] strarr = str.ToCharArray();
 
-            for(int i=0; i< strarr.Length;i++)
+            //for(int i=0; i< strarr.Length;i++)
+            //{
+            //    if (Convert.ToInt32(strarr[i]) >=65 && Convert.ToInt32(strarr[i]) <= 90)
+            //    {
+            //        strarr[i] = (char) (Convert.ToInt32(strarr[i]) + 32);
+            //    }
+            //    else if(Convert.ToInt32(strarr[i]) >= 97 && Convert.ToInt32(strarr[i]) <= 122)
+            //    {
+            //        strarr[i] = (char)(Convert.ToInt32(strarr[i]) - 32);
+            //    }
+            //}
+
+            //string newstr = new string(strarr);
+            //Console.WriteLine(newstr);
+
+            //95.	Write a C# Program to Count the Number of Lines in a String
+
+            string str = "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: " +
+                "\n a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of " +
+                "\n ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” " +
+                "\n (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. " +
+                "For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. " +
+                "Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, " +
+                "we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.";
+
+            int count = 1;
+            char[] strarr = str.ToCharArray();
+            for (int i=0; i<strarr.Length;i++)
             {
-                if (Convert.ToInt32(strarr[i]) >=65 && Convert.ToInt32(strarr[i]) <= 90)
+                if (strarr[i] == '\n')
                 {
-                    strarr[i] = (char) (Convert.ToInt32(strarr[i]) + 32);
-                }
-                else if(Convert.ToInt32(strarr[i]) >= 97 && Convert.ToInt32(strarr[i]) <= 122)
-                {
-                    strarr[i] = (char)(Convert.ToInt32(strarr[i]) - 32);
+                    count += 1;
                 }
             }
 
-            string newstr = new string(strarr);
-            Console.WriteLine(newstr);
+            Console.WriteLine("Number of lines are :"+count);
 
         }
 

@@ -91,7 +91,8 @@
 | 87 | Write a C# Program to Demonstrate Unboxing Operations  | complete |
 | 88 | Write a C# Program to find Product of 2 numbers using recursion  | Incomplete |
 | 89 | Write a C# Program to Find All Substrings in a String  | complete |
-| 89 | Write a C# Program to Convert Characters of a String to Opposite Case.  | Incomplete |
+| 90 | Write a C# Program to Convert Characters of a String to Opposite Case | complete |
+| 91 | Write a C# Program to Count the Number of Lines in a String | complete |
 
 
 
