@@ -1440,22 +1440,40 @@ namespace ProblemSolution
 
             //93.Write a C# Program to Find All Substrings in a String
 
+            //string str = "Neha";
+            //char[] strarr = str.ToCharArray();
+
+            //for(int i = 0; i< strarr.Length;i++)
+            //{
+            //    for(int j=i; j<strarr.Length; j++)
+            //    {
+            //        for (int k =i; k<=j;k++ )
+            //        {
+            //            Console.Write(strarr[k]);
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //}
+
+            //94.Write a C# Program to Convert Characters of a String to Opposite Case. A-Z is 65-90 a-z is 97-122
+
             string str = "Neha";
             char[] strarr = str.ToCharArray();
 
-            for(int i = 0; i< strarr.Length;i++)
+            for(int i=0; i< strarr.Length;i++)
             {
-                for(int j=i; j<strarr.Length; j++)
+                if (Convert.ToInt32(strarr[i]) >=65 && Convert.ToInt32(strarr[i]) <= 90)
                 {
-                    for (int k =i; k<=j;k++ )
-                    {
-                        Console.Write(strarr[k]);
-                    }
-                    Console.WriteLine();
+                    strarr[i] = (char) (Convert.ToInt32(strarr[i]) + 32);
+                }
+                else if(Convert.ToInt32(strarr[i]) >= 97 && Convert.ToInt32(strarr[i]) <= 122)
+                {
+                    strarr[i] = (char)(Convert.ToInt32(strarr[i]) - 32);
                 }
             }
 
-
+            string newstr = new string(strarr);
+            Console.WriteLine(newstr);
 
         }
 
