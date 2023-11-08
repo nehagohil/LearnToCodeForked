@@ -1431,12 +1431,29 @@ namespace ProblemSolution
 
             //90.Write a C# Program to find Product of 2 numbers using recursion
 
-            int num1, num2;
-            Console.WriteLine("Enter number 1 for product :");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            //int num1, num2;
+            //Console.WriteLine("Enter number 1 for product :");
+            //num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter number 2 for product :");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter number 2 for product :");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+
+            //93.Write a C# Program to Find All Substrings in a String
+
+            string str = "Neha";
+            char[] strarr = str.ToCharArray();
+
+            for(int i = 0; i< strarr.Length;i++)
+            {
+                for(int j=i; j<strarr.Length; j++)
+                {
+                    for (int k =i; k<=j;k++ )
+                    {
+                        Console.Write(strarr[k]);
+                    }
+                    Console.WriteLine();
+                }
+            }
 
 
 
