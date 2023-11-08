@@ -1365,38 +1365,51 @@ namespace ProblemSolution
             //85.Write a C# Strong Number Program in C using While Loop
             //Strong number is a special number whose sum of the factorial of digits is equal to the original number.For Example: 145 is strong number. Since, 1! + 4! + 5!
 
-            int num;
-            Console.WriteLine("Enter limit upto which you want to get the list of strong number :");
-            num = Convert.ToInt32(Console.ReadLine());
+            //int num;
+            //Console.WriteLine("Enter limit upto which you want to get the list of strong number :");
+            //num = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= num; i++)
-            {
-                int sumreplica=0;
-                int checknum = i;
-                int checkstrong = i;
-                int rem;
-                int sum = 0;
-                while (checkstrong > 0)
-                {
-                    
-                    int fact = 1;
-                    rem = checkstrong % 10;
-                    while(rem > 0)
-                    {
-                        fact = fact * rem;
-                        rem--;
-                    }
-                    sum += fact;
-                    checkstrong = checkstrong / 10;
-                   
-                }
+            //for (int i = 1; i <= num; i++)
+            //{
+            //    int sumreplica=0;
+            //    int checknum = i;
+            //    int checkstrong = i;
+            //    int rem;
+            //    int sum = 0;
+            //    while (checkstrong > 0)
+            //    {
 
-                if (sum == i)
-                {
-                    Console.WriteLine("The strong number is :" + i);
-                }
-            }
+            //        int fact = 1;
+            //        rem = checkstrong % 10;
+            //        while(rem > 0)
+            //        {
+            //            fact = fact * rem;
+            //            rem--;
+            //        }
+            //        sum += fact;
+            //        checkstrong = checkstrong / 10;
 
+            //    }
+
+            //    if (sum == i)
+            //    {
+            //        Console.WriteLine("The strong number is :" + i);
+            //    }
+            //}
+
+            // 86.	Write a C# Program to Find the Minimum Range of Data Types
+
+            Console.WriteLine("Min size of int is :" + int.MinValue);
+            Console.WriteLine("Min size of float is :"+float.MinValue);
+            Console.WriteLine("Min size of int is :" + double.MinValue);
+            Console.WriteLine("Min size of float is :" + char.MinValue);
+
+            // 87.	Write a C# Program to Find the Maximun Range of Data Types
+
+            Console.WriteLine("Min size of int is :" + int.MaxValue);
+            Console.WriteLine("Min size of float is :" + float.MaxValue);
+            Console.WriteLine("Min size of int is :" + double.MaxValue);
+            Console.WriteLine("Min size of float is :" + char.MaxValue);
         }
 
     }

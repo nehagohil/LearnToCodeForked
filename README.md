@@ -85,6 +85,8 @@
 | 81 | Write a C# Program to Display Armstrong Number between Two Intervals  | complete |
 | 82 | Write a C# Program to Find Nth Armstrong Number  | complete |
 | 83 | Write a C# Strong Number Program in C using While Loop  | complete |
+| 84 | Write a C# Program to Find the Minimum Range of Data Types  | complete |
+| 85 | Write a C# Program to Find the Maximun Range of Data Types  | complete |
 
 
 
