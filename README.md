@@ -90,6 +90,11 @@
 | 86 | Write a C# Program to Demonstrate Boxing Operations  | complete |
 | 87 | Write a C# Program to Demonstrate Unboxing Operations  | complete |
 | 88 | Write a C# Program to find Product of 2 numbers using recursion  | Incomplete |
+| 89 | Write a C# Program to Find All Substrings in a String  | complete |
+| 90 | Write a C# Program to Convert Characters of a String to Opposite Case | complete |
+| 91 | Write a C# Program to Count the Number of Lines in a String | complete |
+| 92 | Write a C# Program to print the Frequency of “is” and "the" Word in a String in C# | complete |
+| 93 | Write a C# Program to print string in Pasal case | complete |
 
 
 

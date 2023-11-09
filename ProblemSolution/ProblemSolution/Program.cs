@@ -1431,15 +1431,97 @@ namespace ProblemSolution
 
             //90.Write a C# Program to find Product of 2 numbers using recursion
 
-            int num1, num2;
-            Console.WriteLine("Enter number 1 for product :");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            //int num1, num2;
+            //Console.WriteLine("Enter number 1 for product :");
+            //num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter number 2 for product :");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter number 2 for product :");
+            //num2 = Convert.ToInt32(Console.ReadLine());
 
+            //93.Write a C# Program to Find All Substrings in a String
 
+            //string str = "Neha";
+            //char[] strarr = str.ToCharArray();
 
+            //for(int i = 0; i< strarr.Length;i++)
+            //{
+            //    for(int j=i; j<strarr.Length; j++)
+            //    {
+            //        for (int k =i; k<=j;k++ )
+            //        {
+            //            Console.Write(strarr[k]);
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //}
+
+            //94.Write a C# Program to Convert Characters of a String to Opposite Case. A-Z is 65-90 a-z is 97-122
+
+            //string str = "Neha";
+            //char[] strarr = str.ToCharArray();
+
+            //for(int i=0; i< strarr.Length;i++)
+            //{
+            //    if (Convert.ToInt32(strarr[i]) >=65 && Convert.ToInt32(strarr[i]) <= 90)
+            //    {
+            //        strarr[i] = (char) (Convert.ToInt32(strarr[i]) + 32);
+            //    }
+            //    else if(Convert.ToInt32(strarr[i]) >= 97 && Convert.ToInt32(strarr[i]) <= 122)
+            //    {
+            //        strarr[i] = (char)(Convert.ToInt32(strarr[i]) - 32);
+            //    }
+            //}
+
+            //string newstr = new string(strarr);
+            //Console.WriteLine(newstr);
+
+            //95.	Write a C# Program to Count the Number of Lines in a String
+
+            //string str = "Neha is cuteness overflow plus plus " +
+            //    "\n Neha is cuteness overflow plus plus" +
+            //    "\n Neha is cuteness overflow plus plus" +
+            //    "\n Neha is cuteness overflow plus plus";
+
+            //int count = 1;
+            //char[] strarr = str.ToCharArray();
+            //for (int i=0; i<strarr.Length;i++)
+            //{
+            //    if (strarr[i] == '\n')
+            //    {
+            //        count += 1;
+            //    }
+            //}
+
+            //Console.WriteLine("Number of lines are :"+count);
+
+            //96.Write a C# Program to print the Frequency of “is” and "the" Word in a String in C#
+
+            //string str = "Neha is a very cute girl, she is the best";
+            //int isthecount = 0;
+            //string[] strarr = str.Split(" ");
+            //foreach (var item in strarr)
+            //{
+            //    if(item == "is" || item =="the")
+            //    {
+            //        isthecount += 1;
+            //    }
+            //}
+            //Console.WriteLine(" The frequency of is and the : " +isthecount);
+
+            //97.	Write a C# Program to print string in Pasal case
+
+            string str = "neha gohil";
+            string[] strarr = str.Split(" ");
+            for (int i=0; i<strarr.Length;i++)
+            {
+                string word = strarr[i];
+                char firstChar = char.ToUpper(word[0]);
+                string restchars = word.Substring(1).ToLower();
+                strarr[i] = firstChar + restchars;
+            }
+
+            string pascalstring = string.Join("",strarr);
+            Console.WriteLine(pascalstring);
         }
 
     }
