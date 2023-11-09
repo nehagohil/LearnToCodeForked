@@ -1496,20 +1496,33 @@ namespace ProblemSolution
 
             //96.Write a C# Program to print the Frequency of “is” and "the" Word in a String in C#
 
-            string str = "Neha is a very cute girl, she is the best";
-            int isthecount = 0;
+            //string str = "Neha is a very cute girl, she is the best";
+            //int isthecount = 0;
+            //string[] strarr = str.Split(" ");
+            //foreach (var item in strarr)
+            //{
+            //    if(item == "is" || item =="the")
+            //    {
+            //        isthecount += 1;
+            //    }
+            //}
+            //Console.WriteLine(" The frequency of is and the : " +isthecount);
+
+            //97.	Write a C# Program to print string in Pasal case
+
+            string str = "neha gohil";
             string[] strarr = str.Split(" ");
-            foreach (var item in strarr)
+            for (int i=0; i<strarr.Length;i++)
             {
-                if(item == "is" || item =="the")
-                {
-                    isthecount += 1;
-                }
+                string word = strarr[i];
+                char firstChar = char.ToUpper(word[0]);
+                string restchars = word.Substring(1).ToLower();
+                strarr[i] = firstChar + restchars;
             }
-            Console.WriteLine(" The frequency of is and the : " +isthecount);
 
+            string pascalstring = string.Join("",strarr);
+            Console.WriteLine(pascalstring);
         }
-
 
     }
 }
