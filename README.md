@@ -93,6 +93,7 @@
 | 89 | Write a C# Program to Find All Substrings in a String  | complete |
 | 90 | Write a C# Program to Convert Characters of a String to Opposite Case | complete |
 | 91 | Write a C# Program to Count the Number of Lines in a String | complete |
+| 92 | Write a C# Program to print the Frequency of “is” and "the" Word in a String in C# | complete |
 
 
 

@@ -1477,27 +1477,39 @@ namespace ProblemSolution
 
             //95.	Write a C# Program to Count the Number of Lines in a String
 
-            string str = "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: " +
-                "\n a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of " +
-                "\n ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” " +
-                "\n (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. " +
-                "For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. " +
-                "Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, " +
-                "we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.";
+            //string str = "Neha is cuteness overflow plus plus " +
+            //    "\n Neha is cuteness overflow plus plus" +
+            //    "\n Neha is cuteness overflow plus plus" +
+            //    "\n Neha is cuteness overflow plus plus";
 
-            int count = 1;
-            char[] strarr = str.ToCharArray();
-            for (int i=0; i<strarr.Length;i++)
+            //int count = 1;
+            //char[] strarr = str.ToCharArray();
+            //for (int i=0; i<strarr.Length;i++)
+            //{
+            //    if (strarr[i] == '\n')
+            //    {
+            //        count += 1;
+            //    }
+            //}
+
+            //Console.WriteLine("Number of lines are :"+count);
+
+            //96.Write a C# Program to print the Frequency of “is” and "the" Word in a String in C#
+
+            string str = "Neha is a very cute girl, she is the best";
+            int isthecount = 0;
+            string[] strarr = str.Split(" ");
+            foreach (var item in strarr)
             {
-                if (strarr[i] == '\n')
+                if(item == "is" || item =="the")
                 {
-                    count += 1;
+                    isthecount += 1;
                 }
             }
-
-            Console.WriteLine("Number of lines are :"+count);
+            Console.WriteLine(" The frequency of is and the : " +isthecount);
 
         }
+
 
     }
 }
