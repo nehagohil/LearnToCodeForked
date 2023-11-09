@@ -1510,18 +1510,27 @@ namespace ProblemSolution
 
             //97.	Write a C# Program to print string in Pasal case
 
-            string str = "neha gohil";
-            string[] strarr = str.Split(" ");
-            for (int i=0; i<strarr.Length;i++)
-            {
-                string word = strarr[i];
-                char firstChar = char.ToUpper(word[0]);
-                string restchars = word.Substring(1).ToLower();
-                strarr[i] = firstChar + restchars;
-            }
+            //string str = "neha gohil";
+            //string[] strarr = str.Split(" ");
+            //for (int i=0; i<strarr.Length;i++)
+            //{
+            //    string word = strarr[i];
+            //    char firstChar = char.ToUpper(word[0]);
+            //    string restchars = word.Substring(1).ToLower();
+            //    strarr[i] = firstChar + restchars;
+            //}
 
-            string pascalstring = string.Join("",strarr);
-            Console.WriteLine(pascalstring);
+            //string pascalstring = string.Join("",strarr);
+            //Console.WriteLine(pascalstring);
+
+            //98.	Write a C# Program to Convert a Positive Number into Negative
+
+            int num, negativenum;
+            Console.WriteLine("enter the number :");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            negativenum = num - (num * 2);
+            Console.WriteLine("Negative number is :"+negativenum);
         }
 
     }

@@ -95,6 +95,7 @@
 | 91 | Write a C# Program to Count the Number of Lines in a String | complete |
 | 92 | Write a C# Program to print the Frequency of “is” and "the" Word in a String in C# | complete |
 | 93 | Write a C# Program to print string in Pasal case | complete |
+| 94 | Write a C# Program to Convert a Positive Number into Negative | complete |
 
 
 
