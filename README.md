@@ -96,6 +96,7 @@
 | 92 | Write a C# Program to print the Frequency of “is” and "the" Word in a String in C# | complete |
 | 93 | Write a C# Program to print string in Pasal case | complete |
 | 94 | Write a C# Program to Convert a Positive Number into Negative | complete |
+| 95 | Write a C# Program to Find the Average of All the Array Elements | complete |
 
 
 

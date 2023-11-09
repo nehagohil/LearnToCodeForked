@@ -1525,12 +1525,25 @@ namespace ProblemSolution
 
             //98.	Write a C# Program to Convert a Positive Number into Negative
 
-            int num, negativenum;
-            Console.WriteLine("enter the number :");
-            num = Convert.ToInt32(Console.ReadLine());
+            //int num, negativenum;
+            //Console.WriteLine("enter the number :");
+            //num = Convert.ToInt32(Console.ReadLine());
 
-            negativenum = num - (num * 2);
-            Console.WriteLine("Negative number is :"+negativenum);
+            //negativenum = num - (num * 2);
+            //Console.WriteLine("Negative number is :"+negativenum);
+
+            //99.	Write a C# Program to Find the Average of All the Array Elements
+
+            int[] arr1 = { 10, 15, 20, 25, 30 };
+            int length = arr1.Length;
+            int sum = 0, average;
+            for(int i=0; i<arr1.Length;i++)
+            {
+                sum += arr1[i];
+            }
+            average = sum / length;
+
+            Console.WriteLine("Average of all the array elements  :"+average);
         }
 
     }
