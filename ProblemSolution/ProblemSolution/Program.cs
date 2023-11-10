@@ -1534,16 +1534,39 @@ namespace ProblemSolution
 
             //99.	Write a C# Program to Find the Average of All the Array Elements
 
-            int[] arr1 = { 10, 15, 20, 25, 30 };
-            int length = arr1.Length;
-            int sum = 0, average;
-            for(int i=0; i<arr1.Length;i++)
-            {
-                sum += arr1[i];
-            }
-            average = sum / length;
+            //int[] arr1 = { 10, 15, 20, 25, 30 };
+            //int length = arr1.Length;
+            //int sum = 0, average;
+            //for(int i=0; i<arr1.Length;i++)
+            //{
+            //    sum += arr1[i];
+            //}
+            //average = sum / length;
 
-            Console.WriteLine("Average of all the array elements  :"+average);
+            //Console.WriteLine("Average of all the array elements  :"+average);
+
+            // 100.Write a C# Program to Merge Two Arrays into Third Array.
+
+            int[] arr1 = { 10, 20, 30 };
+            int[] arr2 = { 40, 50, 60 };
+            int[] resultarr = new int[arr1.Length+arr2.Length];
+
+            for(int i=0; i<arr1.Length; i++)
+            {
+                resultarr[i] = arr1[i];
+            }
+            for(int j =0; j<arr2.Length;j++)
+            {
+                resultarr[arr1.Length + j] = arr2[j];
+            }
+
+            for(int k=0; k<resultarr.Length;k++)
+            {
+                Console.WriteLine(resultarr[k]);
+            }
+
+
+
         }
 
     }
