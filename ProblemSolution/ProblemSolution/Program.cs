@@ -1510,18 +1510,87 @@ namespace ProblemSolution
 
             //97.	Write a C# Program to print string in Pasal case
 
-            string str = "neha gohil";
-            string[] strarr = str.Split(" ");
-            for (int i=0; i<strarr.Length;i++)
-            {
-                string word = strarr[i];
-                char firstChar = char.ToUpper(word[0]);
-                string restchars = word.Substring(1).ToLower();
-                strarr[i] = firstChar + restchars;
-            }
+            //string str = "neha gohil";
+            //string[] strarr = str.Split(" ");
+            //for (int i=0; i<strarr.Length;i++)
+            //{
+            //    string word = strarr[i];
+            //    char firstChar = char.ToUpper(word[0]);
+            //    string restchars = word.Substring(1).ToLower();
+            //    strarr[i] = firstChar + restchars;
+            //}
 
-            string pascalstring = string.Join("",strarr);
-            Console.WriteLine(pascalstring);
+            //string pascalstring = string.Join("",strarr);
+            //Console.WriteLine(pascalstring);
+
+            //98.	Write a C# Program to Convert a Positive Number into Negative
+
+            //int num, negativenum;
+            //Console.WriteLine("enter the number :");
+            //num = Convert.ToInt32(Console.ReadLine());
+
+            //negativenum = num - (num * 2);
+            //Console.WriteLine("Negative number is :"+negativenum);
+
+            //99.	Write a C# Program to Find the Average of All the Array Elements
+
+            //int[] arr1 = { 10, 15, 20, 25, 30 };
+            //int length = arr1.Length;
+            //int sum = 0, average;
+            //for(int i=0; i<arr1.Length;i++)
+            //{
+            //    sum += arr1[i];
+            //}
+            //average = sum / length;
+
+            //Console.WriteLine("Average of all the array elements  :"+average);
+
+            // 100.Write a C# Program to Merge Two Arrays into Third Array.
+
+            //int[] arr1 = { 10, 20, 30 };
+            //int[] arr2 = { 40, 50, 60 };
+            //int[] resultarr = new int[arr1.Length+arr2.Length];
+
+            //for(int i=0; i<arr1.Length; i++)
+            //{
+            //    resultarr[i] = arr1[i];
+            //}
+            //for(int j =0; j<arr2.Length;j++)
+            //{
+            //    resultarr[arr1.Length + j] = arr2[j];
+            //}
+
+            //for(int k=0; k<resultarr.Length;k++)
+            //{
+            //    Console.WriteLine(resultarr[k]);
+            //}
+
+
+            //101.	Write a C# program that converts alternate lower case letter and upper case letter ("A" - "Z").
+            //For example, if the user enters "Shivam" then the program will show "ShIvAm" on the screen.
+
+            //string str = "Shivam";
+            //char[] chararray = str.ToCharArray();
+
+            //for (int i=0; i<chararray.Length; i++)
+            //{
+            //    if (i %2 != 0)
+            //    {
+            //        chararray[i] = char.ToLower(chararray[i]);
+            //    }
+            //    else
+            //    {
+            //        chararray[i] = char.ToUpper(chararray[i]);
+            //    }
+            //}
+
+            //string newstring = new string(chararray);
+            //Console.WriteLine("The string is :"+ newstring);
+
+            //102.	Write a C# program that takes three points (x1, y1), (x2, y2) and (x3, y3) from the user and
+            //the program will check wheteher or not all the three points fall on one straight line. 
+
+
         }
 
     }
