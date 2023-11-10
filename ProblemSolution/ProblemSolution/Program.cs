@@ -1547,25 +1547,45 @@ namespace ProblemSolution
 
             // 100.Write a C# Program to Merge Two Arrays into Third Array.
 
-            int[] arr1 = { 10, 20, 30 };
-            int[] arr2 = { 40, 50, 60 };
-            int[] resultarr = new int[arr1.Length+arr2.Length];
+            //int[] arr1 = { 10, 20, 30 };
+            //int[] arr2 = { 40, 50, 60 };
+            //int[] resultarr = new int[arr1.Length+arr2.Length];
 
-            for(int i=0; i<arr1.Length; i++)
+            //for(int i=0; i<arr1.Length; i++)
+            //{
+            //    resultarr[i] = arr1[i];
+            //}
+            //for(int j =0; j<arr2.Length;j++)
+            //{
+            //    resultarr[arr1.Length + j] = arr2[j];
+            //}
+
+            //for(int k=0; k<resultarr.Length;k++)
+            //{
+            //    Console.WriteLine(resultarr[k]);
+            //}
+
+
+            //101.	Write a C# program that converts alternate lower case letter and upper case letter ("A" - "Z").
+            //For example, if the user enters "Shivam" then the program will show "ShIvAm" on the screen.
+
+            string str = "Shivam";
+            char[] chararray = str.ToCharArray();
+
+            for (int i=0; i<chararray.Length; i++)
             {
-                resultarr[i] = arr1[i];
-            }
-            for(int j =0; j<arr2.Length;j++)
-            {
-                resultarr[arr1.Length + j] = arr2[j];
-            }
-
-            for(int k=0; k<resultarr.Length;k++)
-            {
-                Console.WriteLine(resultarr[k]);
+                if (i %2 != 0)
+                {
+                    chararray[i] = char.ToLower(chararray[i]);
+                }
+                else
+                {
+                    chararray[i] = char.ToUpper(chararray[i]);
+                }
             }
 
-
+            string newstring = new string(chararray);
+            Console.WriteLine("The string is :"+ newstring);
 
         }
 

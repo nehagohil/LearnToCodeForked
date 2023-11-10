@@ -98,6 +98,8 @@
 | 94 | Write a C# Program to Convert a Positive Number into Negative | complete |
 | 95 | Write a C# Program to Find the Average of All the Array Elements | complete |
 | 96 | Write a C# Program to Merge Two Arrays into Third Array | complete |
+| 97 | Write a C# program that converts alternate lower case letter and upper case letter  | complete |
+
 
 
 
