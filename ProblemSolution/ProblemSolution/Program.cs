@@ -1569,23 +1569,27 @@ namespace ProblemSolution
             //101.	Write a C# program that converts alternate lower case letter and upper case letter ("A" - "Z").
             //For example, if the user enters "Shivam" then the program will show "ShIvAm" on the screen.
 
-            string str = "Shivam";
-            char[] chararray = str.ToCharArray();
+            //string str = "Shivam";
+            //char[] chararray = str.ToCharArray();
 
-            for (int i=0; i<chararray.Length; i++)
-            {
-                if (i %2 != 0)
-                {
-                    chararray[i] = char.ToLower(chararray[i]);
-                }
-                else
-                {
-                    chararray[i] = char.ToUpper(chararray[i]);
-                }
-            }
+            //for (int i=0; i<chararray.Length; i++)
+            //{
+            //    if (i %2 != 0)
+            //    {
+            //        chararray[i] = char.ToLower(chararray[i]);
+            //    }
+            //    else
+            //    {
+            //        chararray[i] = char.ToUpper(chararray[i]);
+            //    }
+            //}
 
-            string newstring = new string(chararray);
-            Console.WriteLine("The string is :"+ newstring);
+            //string newstring = new string(chararray);
+            //Console.WriteLine("The string is :"+ newstring);
+
+            //102.	Write a C# program that takes three points (x1, y1), (x2, y2) and (x3, y3) from the user and
+            //the program will check wheteher or not all the three points fall on one straight line. 
+
 
         }
 

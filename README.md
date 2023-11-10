@@ -99,6 +99,7 @@
 | 95 | Write a C# Program to Find the Average of All the Array Elements | complete |
 | 96 | Write a C# Program to Merge Two Arrays into Third Array | complete |
 | 97 | Write a C# program that converts alternate lower case letter and upper case letter  | complete |
+| 98 | Write a C# program that takes three points (x1, y1), (x2, y2) and (x3, y3) from the user and the program will check wheteher or not all the three points fall on one straight line  | complete |
 
 
 
