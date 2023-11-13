@@ -1713,26 +1713,29 @@ namespace ProblemSolution
             //if the time taken by the worker is more than 5 hours then the worker must leave the company.
             //If the time taken by the worker is input through the keyboard then find the efficiency of the worker. 
 
-            double time;
-            Console.WriteLine("enter time taken by the worker");
-            time = Convert.ToDouble(Console.ReadLine());
-            if(time >=2 && time <3)
-            {
-                Console.WriteLine("This worker is highly efficient");
-            }
-            else if(time >= 3 && time <4)
-            {
-                Console.WriteLine("This worker needs to improve his speed");
-            }
-            else if(time >= 4 && time < 5)
-            {
-                Console.WriteLine("This worker needs to undergo with the training");
-            }
-            else
-            {
-                Console.WriteLine("The worker must leave the company");
-            }
+            //double time;
+            //Console.WriteLine("enter time taken by the worker");
+            //time = Convert.ToDouble(Console.ReadLine());
+            //if(time >=2 && time <3)
+            //{
+            //    Console.WriteLine("This worker is highly efficient");
+            //}
+            //else if(time >= 3 && time <4)
+            //{
+            //    Console.WriteLine("This worker needs to improve his speed");
+            //}
+            //else if(time >= 4 && time < 5)
+            //{
+            //    Console.WriteLine("This worker needs to undergo with the training");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The worker must leave the company");
+            //}
 
+            //106.	Write a C# program using conditional operators to determine whether a year entered through the keyboard is a leap year or not. 
+
+            
         }
 
     }
