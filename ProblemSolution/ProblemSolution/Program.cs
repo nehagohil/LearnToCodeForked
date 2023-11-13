@@ -1656,56 +1656,82 @@ namespace ProblemSolution
             //P->convert from pound to kilogram.
             //If the user enters any other character then show a proper message.
 
-            char ch;
-            do
-            {
-                Console.WriteLine("I->convert from inches to centimeters");
-                Console.WriteLine("G->convert from gallons to liters.");
-                Console.WriteLine("M->convert from mile to kilometer.");
-                Console.WriteLine("P->convert from pound to kilogram.");
-                Console.WriteLine("Enter your choice :");
-                ch = Convert.ToChar(Console.ReadLine());
-                switch(ch)
-                {
-                    case 'I':
-                        int inch;
-                        double centimeter;
-                        Console.WriteLine("Please enter inches to convert to centimeters");
-                        inch = Convert.ToInt32(Console.ReadLine());
-                        centimeter = inch * 2.54;
-                        Console.WriteLine("centimeters is :"+centimeter);
-                        break;
-                    case 'G':
-                        int gallons;
-                        double liters;
-                        Console.WriteLine("Please enter gallons to convert to liters");
-                        gallons = Convert.ToInt32(Console.ReadLine());
-                        liters = gallons * 3.785;
-                        Console.WriteLine("Liters is :" + liters);
-                        break;
-                    case 'M':
-                        int miles;
-                        double km;
-                        Console.WriteLine("Please enter miles to convert to kilometers");
-                        miles = Convert.ToInt32(Console.ReadLine());
-                        km = miles * 1.609;
-                        Console.WriteLine("kilometers is :"+km);
-                        break;
-                    case 'P':
-                        int pound;
-                        double kg;
-                        Console.WriteLine("Please enter pound to convert to kilogram");
-                        pound = Convert.ToInt32(Console.ReadLine());
-                        kg = pound / 2.2046;
-                        Console.WriteLine("kilograms is :"+kg);
-                        break;
-                    default:
-                        Console.WriteLine("Incorrect input...!!!!!!Enter characers from I,G,M,P ");
-                        break;
-                }
+            //char ch;
+            //do
+            //{
+            //    Console.WriteLine("I->convert from inches to centimeters");
+            //    Console.WriteLine("G->convert from gallons to liters.");
+            //    Console.WriteLine("M->convert from mile to kilometer.");
+            //    Console.WriteLine("P->convert from pound to kilogram.");
+            //    Console.WriteLine("Enter your choice :");
+            //    ch = Convert.ToChar(Console.ReadLine());
+            //    switch(ch)
+            //    {
+            //        case 'I':
+            //            int inch;
+            //            double centimeter;
+            //            Console.WriteLine("Please enter inches to convert to centimeters");
+            //            inch = Convert.ToInt32(Console.ReadLine());
+            //            centimeter = inch * 2.54;
+            //            Console.WriteLine("centimeters is :"+centimeter);
+            //            break;
+            //        case 'G':
+            //            int gallons;
+            //            double liters;
+            //            Console.WriteLine("Please enter gallons to convert to liters");
+            //            gallons = Convert.ToInt32(Console.ReadLine());
+            //            liters = gallons * 3.785;
+            //            Console.WriteLine("Liters is :" + liters);
+            //            break;
+            //        case 'M':
+            //            int miles;
+            //            double km;
+            //            Console.WriteLine("Please enter miles to convert to kilometers");
+            //            miles = Convert.ToInt32(Console.ReadLine());
+            //            km = miles * 1.609;
+            //            Console.WriteLine("kilometers is :"+km);
+            //            break;
+            //        case 'P':
+            //            int pound;
+            //            double kg;
+            //            Console.WriteLine("Please enter pound to convert to kilogram");
+            //            pound = Convert.ToInt32(Console.ReadLine());
+            //            kg = pound / 2.2046;
+            //            Console.WriteLine("kilograms is :"+kg);
+            //            break;
+            //        default:
+            //            Console.WriteLine("Incorrect input...!!!!!!Enter characers from I,G,M,P ");
+            //            break;
+            //    }
 
-            } while (ch != 'y');
-            
+            //} while (ch != 'y');
+
+            //105.	In a company, worker efficiency is determined on the basis of the time required for a worker to complete a specific job.
+            //If the time taken by the worker is between 2 - 3 hours, then the worker is said to be highly efficient.
+            //If the time required by the worker is 3 - 4 hours, then the worker is ordered to increase their speed.
+            //If the time taken is 4 - 5 hours then the worker is given training to improve his speed and
+            //if the time taken by the worker is more than 5 hours then the worker must leave the company.
+            //If the time taken by the worker is input through the keyboard then find the efficiency of the worker. 
+
+            double time;
+            Console.WriteLine("enter time taken by the worker");
+            time = Convert.ToDouble(Console.ReadLine());
+            if(time >=2 && time <3)
+            {
+                Console.WriteLine("This worker is highly efficient");
+            }
+            else if(time >= 3 && time <4)
+            {
+                Console.WriteLine("This worker needs to improve his speed");
+            }
+            else if(time >= 4 && time < 5)
+            {
+                Console.WriteLine("This worker needs to undergo with the training");
+            }
+            else
+            {
+                Console.WriteLine("The worker must leave the company");
+            }
 
         }
 
