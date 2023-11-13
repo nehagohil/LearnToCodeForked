@@ -1590,27 +1590,62 @@ namespace ProblemSolution
             //102.	Write a C# program that takes three points (x1, y1), (x2, y2) and (x3, y3) from the user and
             //the program will check wheteher or not all the three points fall on one straight line. 
 
-            float x1, y1, x2, y2, x3, y3,m,n;
-            Console.WriteLine("Enter x1 and y1");
+            //float x1, y1, x2, y2, x3, y3,m,n;
+            //Console.WriteLine("Enter x1 and y1");
+            //x1 = Convert.ToInt32(Console.ReadLine());
+            //y1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter x2 and y2");
+            //x2 = Convert.ToInt32(Console.ReadLine());
+            //y2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter x3 and y3");
+            //x3 = Convert.ToInt32(Console.ReadLine());
+            //y3 = Convert.ToInt32(Console.ReadLine());
+
+            //m = (y2 - y1) / (x2 - x1);
+            //n = (y3 - y2) / (x3 - x2);
+
+            //if(m == n)
+            //{
+            //    Console.WriteLine("All the three points fall on one straight line");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Points won't fall on one straight line");
+            //}
+
+            //103.	Write a C# program that takes coordinates (x, y) of a center of a circle and its radius from the user,
+            //the program will determine whether a point lies inside the circle, on the circle or outside the circle. 
+
+            int x1, y1, x2, y2, radius;
+            double pc;
+            Console.WriteLine("Enter centre coordinates of the circle");
             x1 = Convert.ToInt32(Console.ReadLine());
             y1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter x2 and y2");
+
+            Console.WriteLine("enter radius of the circle");
+            radius = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter end coordinates of the circle");
             x2 = Convert.ToInt32(Console.ReadLine());
             y2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter x3 and y3");
-            x3 = Convert.ToInt32(Console.ReadLine());
-            y3 = Convert.ToInt32(Console.ReadLine());
 
-            m = (y2 - y1) / (x2 - x1);
-            n = (y3 - y2) / (x3 - x2);
+            pc = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 
-            if(m == n)
+            if(pc >radius)
             {
-                Console.WriteLine("All the three points fall on one straight line");
+                Console.WriteLine("Point lies outside the circle");
+            }
+            else if(pc < radius)
+            {
+                Console.WriteLine("Point lies inside the circle");
+            }
+            else if(pc == radius)
+            {
+                Console.WriteLine("Point lies on the boundary of circle");
             }
             else
             {
-                Console.WriteLine("Points won't fall on one straight line");
+                Console.WriteLine("wrong entry");
             }
         }
 
