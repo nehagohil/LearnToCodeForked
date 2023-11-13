@@ -1616,37 +1616,97 @@ namespace ProblemSolution
             //103.	Write a C# program that takes coordinates (x, y) of a center of a circle and its radius from the user,
             //the program will determine whether a point lies inside the circle, on the circle or outside the circle. 
 
-            int x1, y1, x2, y2, radius;
-            double pc;
-            Console.WriteLine("Enter centre coordinates of the circle");
-            x1 = Convert.ToInt32(Console.ReadLine());
-            y1 = Convert.ToInt32(Console.ReadLine());
+            //int x1, y1, x2, y2, radius;
+            //double pc;
+            //Console.WriteLine("Enter centre coordinates of the circle");
+            //x1 = Convert.ToInt32(Console.ReadLine());
+            //y1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("enter radius of the circle");
-            radius = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter radius of the circle");
+            //radius = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter end coordinates of the circle");
-            x2 = Convert.ToInt32(Console.ReadLine());
-            y2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter end coordinates of the circle");
+            //x2 = Convert.ToInt32(Console.ReadLine());
+            //y2 = Convert.ToInt32(Console.ReadLine());
 
-            pc = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            //pc = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 
-            if(pc >radius)
+            //if(pc >radius)
+            //{
+            //    Console.WriteLine("Point lies outside the circle");
+            //}
+            //else if(pc < radius)
+            //{
+            //    Console.WriteLine("Point lies inside the circle");
+            //}
+            //else if(pc == radius)
+            //{
+            //    Console.WriteLine("Point lies on the boundary of circle");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("wrong entry");
+            //}
+
+            //104.	Write a C# program using a switch statement that takes one value from the user and asks about the type of conversion and
+            //then performs a conversion depending on the type of conversion. If user enters:
+            //I->convert from inches to centimeters.
+            //G->convert from gallons to liters.
+            //M->convert from mile to kilometer.
+            //P->convert from pound to kilogram.
+            //If the user enters any other character then show a proper message.
+
+            char ch;
+            do
             {
-                Console.WriteLine("Point lies outside the circle");
-            }
-            else if(pc < radius)
-            {
-                Console.WriteLine("Point lies inside the circle");
-            }
-            else if(pc == radius)
-            {
-                Console.WriteLine("Point lies on the boundary of circle");
-            }
-            else
-            {
-                Console.WriteLine("wrong entry");
-            }
+                Console.WriteLine("I->convert from inches to centimeters");
+                Console.WriteLine("G->convert from gallons to liters.");
+                Console.WriteLine("M->convert from mile to kilometer.");
+                Console.WriteLine("P->convert from pound to kilogram.");
+                Console.WriteLine("Enter your choice :");
+                ch = Convert.ToChar(Console.ReadLine());
+                switch(ch)
+                {
+                    case 'I':
+                        int inch;
+                        double centimeter;
+                        Console.WriteLine("Please enter inches to convert to centimeters");
+                        inch = Convert.ToInt32(Console.ReadLine());
+                        centimeter = inch * 2.54;
+                        Console.WriteLine("centimeters is :"+centimeter);
+                        break;
+                    case 'G':
+                        int gallons;
+                        double liters;
+                        Console.WriteLine("Please enter gallons to convert to liters");
+                        gallons = Convert.ToInt32(Console.ReadLine());
+                        liters = gallons * 3.785;
+                        Console.WriteLine("Liters is :" + liters);
+                        break;
+                    case 'M':
+                        int miles;
+                        double km;
+                        Console.WriteLine("Please enter miles to convert to kilometers");
+                        miles = Convert.ToInt32(Console.ReadLine());
+                        km = miles * 1.609;
+                        Console.WriteLine("kilometers is :"+km);
+                        break;
+                    case 'P':
+                        int pound;
+                        double kg;
+                        Console.WriteLine("Please enter pound to convert to kilogram");
+                        pound = Convert.ToInt32(Console.ReadLine());
+                        kg = pound / 2.2046;
+                        Console.WriteLine("kilograms is :"+kg);
+                        break;
+                    default:
+                        Console.WriteLine("Incorrect input...!!!!!!Enter characers from I,G,M,P ");
+                        break;
+                }
+
+            } while (ch != 'y');
+            
+
         }
 
     }

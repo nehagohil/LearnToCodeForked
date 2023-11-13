@@ -101,6 +101,7 @@
 | 97 | Write a C# program that converts alternate lower case letter and upper case letter  | complete |
 | 98 | Write a C# program that takes three points (x1, y1), (x2, y2) and (x3, y3) from the user and the program will check wheteher or not all the three points fall on one straight line  | complete |
 | 99 | Write a C# program that takes coordinates (x, y) of a center of a circle and its radius from the user, the program will determine whether a point lies inside the circle | complete |
+| 100 | Write a C# program using a switch statement that takes one value from the user and asks about the type of conversion  | complete |
 
 
 
